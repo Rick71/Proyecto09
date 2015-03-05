@@ -10,7 +10,7 @@
 		1DF0AD2E1AA60E9B005829B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD2D1AA60E9B005829B8 /* main.m */; };
 		1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD301AA60E9B005829B8 /* AppDelegate.m */; };
 		1DF0AD341AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD321AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld */; };
-		1DF0AD371AA60E9B005829B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD361AA60E9B005829B8 /* ViewController.m */; };
+		1DF0AD371AA60E9B005829B8 /* Index.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD361AA60E9B005829B8 /* Index.m */; };
 		1DF0AD3A1AA60E9B005829B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0AD381AA60E9B005829B8 /* Main.storyboard */; };
 		1DF0AD3C1AA60E9B005829B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0AD3B1AA60E9B005829B8 /* Images.xcassets */; };
 		1DF0AD3F1AA60E9B005829B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0AD3D1AA60E9B005829B8 /* LaunchScreen.xib */; };
@@ -34,8 +34,8 @@
 		1DF0AD2F1AA60E9B005829B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1DF0AD301AA60E9B005829B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1DF0AD331AA60E9B005829B8 /* PruebaAppFrog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PruebaAppFrog.xcdatamodel; sourceTree = "<group>"; };
-		1DF0AD351AA60E9B005829B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1DF0AD361AA60E9B005829B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1DF0AD351AA60E9B005829B8 /* Index.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Index.h; sourceTree = "<group>"; };
+		1DF0AD361AA60E9B005829B8 /* Index.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Index.m; sourceTree = "<group>"; };
 		1DF0AD391AA60E9B005829B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DF0AD3B1AA60E9B005829B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1DF0AD3E1AA60E9B005829B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -85,8 +85,8 @@
 			children = (
 				1DF0AD2F1AA60E9B005829B8 /* AppDelegate.h */,
 				1DF0AD301AA60E9B005829B8 /* AppDelegate.m */,
-				1DF0AD351AA60E9B005829B8 /* ViewController.h */,
-				1DF0AD361AA60E9B005829B8 /* ViewController.m */,
+				1DF0AD351AA60E9B005829B8 /* Index.h */,
+				1DF0AD361AA60E9B005829B8 /* Index.m */,
 				1DF0AD381AA60E9B005829B8 /* Main.storyboard */,
 				1DF0AD3B1AA60E9B005829B8 /* Images.xcassets */,
 				1DF0AD3D1AA60E9B005829B8 /* LaunchScreen.xib */,
@@ -224,7 +224,7 @@
 			files = (
 				1DF0AD341AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld in Sources */,
 				1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */,
-				1DF0AD371AA60E9B005829B8 /* ViewController.m in Sources */,
+				1DF0AD371AA60E9B005829B8 /* Index.m in Sources */,
 				1DF0AD2E1AA60E9B005829B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

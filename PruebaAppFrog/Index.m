@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Comercomp. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Index.h"
 
-@interface ViewController ()
+@interface Index ()
 
 @end
 
-@implementation ViewController
+@implementation Index
 
 - (void)viewDidLoad {
     [super viewDidLoad];
