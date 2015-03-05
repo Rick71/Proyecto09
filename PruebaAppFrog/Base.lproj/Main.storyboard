@@ -19,7 +19,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="KvQ-Ck-Ga4" kind="modal" identifier="SegueIndexToJugador" id="QUo-zE-wA3"/>
+                        <segue destination="KvQ-Ck-Ga4" kind="modal" identifier="SegueIndexToJugador" id="mMZ-37-Wad"/>
+                        <segue destination="36h-c5-x91" kind="modal" id="hAp-e1-JNi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -29,7 +30,7 @@
         <!--Jugador-->
         <scene sceneID="Eq9-Tf-bJE">
             <objects>
-                <viewController id="KvQ-Ck-Ga4" userLabel="Jugador" sceneMemberID="viewController">
+                <viewController id="KvQ-Ck-Ga4" userLabel="Jugador" customClass="Jugador" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tYM-1Z-9mV"/>
                         <viewControllerLayoutGuide type="bottom" id="nyX-Xq-6ZR"/>
@@ -48,7 +49,7 @@
         <!--Preguntas-->
         <scene sceneID="Vx2-8x-BVH">
             <objects>
-                <viewController id="iJb-lv-Mly" userLabel="Preguntas" sceneMemberID="viewController">
+                <viewController id="iJb-lv-Mly" userLabel="Preguntas" customClass="Preguntas" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hlc-Y9-195"/>
                         <viewControllerLayoutGuide type="bottom" id="b6b-Vo-T4W"/>
@@ -67,7 +68,7 @@
         <!--Correcto-->
         <scene sceneID="86X-Qf-oeE">
             <objects>
-                <viewController id="c4N-8z-FNk" userLabel="Correcto" sceneMemberID="viewController">
+                <viewController id="c4N-8z-FNk" userLabel="Correcto" customClass="Correcto" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dbt-Um-xoe"/>
                         <viewControllerLayoutGuide type="bottom" id="QHX-3c-62g"/>
@@ -86,7 +87,7 @@
         <!--Fallaste-->
         <scene sceneID="zL3-Eg-Jok">
             <objects>
-                <viewController id="62c-xY-1nc" userLabel="Fallaste" sceneMemberID="viewController">
+                <viewController id="62c-xY-1nc" userLabel="Fallaste" customClass="Fallaste" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SLN-AQ-I85"/>
                         <viewControllerLayoutGuide type="bottom" id="5QZ-Lj-1s6"/>
@@ -105,7 +106,7 @@
         <!--Records-->
         <scene sceneID="F5t-LT-27j">
             <objects>
-                <viewController id="36h-c5-x91" userLabel="Records" sceneMemberID="viewController">
+                <viewController id="36h-c5-x91" userLabel="Records" customClass="Records" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L8t-11-K81"/>
                         <viewControllerLayoutGuide type="bottom" id="7I9-Bt-6EA"/>
@@ -124,7 +125,7 @@
         <!--Clave-->
         <scene sceneID="o69-5x-gjn">
             <objects>
-                <viewController id="EHr-dJ-qgE" userLabel="Clave" sceneMemberID="viewController">
+                <viewController id="EHr-dJ-qgE" userLabel="Clave" customClass="Clave" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mQG-th-BWX"/>
                         <viewControllerLayoutGuide type="bottom" id="z9W-OQ-ywu"/>
@@ -143,7 +144,7 @@
         <!--GeneraPreguntas-->
         <scene sceneID="4Oo-7b-BLG">
             <objects>
-                <viewController id="9ow-oB-Bud" userLabel="GeneraPreguntas" sceneMemberID="viewController">
+                <viewController id="9ow-oB-Bud" userLabel="GeneraPreguntas" customClass="GeneraPreguntas" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ckq-Fj-gsf"/>
                         <viewControllerLayoutGuide type="bottom" id="2X8-ty-z54"/>
@@ -162,7 +163,7 @@
         <!--ListaPreguntas-->
         <scene sceneID="Qvq-df-ePq">
             <objects>
-                <viewController id="gZz-nw-kmd" userLabel="ListaPreguntas" sceneMemberID="viewController">
+                <viewController id="gZz-nw-kmd" userLabel="ListaPreguntas" customClass="ListaPreguntas" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WJM-oh-ror"/>
                         <viewControllerLayoutGuide type="bottom" id="Xur-oT-9zb"/>
