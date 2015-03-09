@@ -15,6 +15,7 @@
 		1D397F421AA8EA7D003F37E9 /* Clave.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F411AA8EA7D003F37E9 /* Clave.m */; };
 		1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */; };
 		1D397F481AA8EAC3003F37E9 /* ListaPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */; };
+		1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F4A1AA8F2D9003F37E9 /* Reglas.m */; };
 		1DF0AD2E1AA60E9B005829B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD2D1AA60E9B005829B8 /* main.m */; };
 		1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD301AA60E9B005829B8 /* AppDelegate.m */; };
 		1DF0AD341AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD321AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld */; };
@@ -52,6 +53,8 @@
 		1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneraPreguntas.m; path = ../GeneraPreguntas.m; sourceTree = "<group>"; };
 		1D397F461AA8EAC3003F37E9 /* ListaPreguntas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListaPreguntas.h; path = ../ListaPreguntas.h; sourceTree = "<group>"; };
 		1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaPreguntas.m; path = ../ListaPreguntas.m; sourceTree = "<group>"; };
+		1D397F491AA8F2D9003F37E9 /* Reglas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reglas.h; path = ../Reglas.h; sourceTree = "<group>"; };
+		1D397F4A1AA8F2D9003F37E9 /* Reglas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reglas.m; path = ../Reglas.m; sourceTree = "<group>"; };
 		1DF0AD281AA60E9A005829B8 /* PruebaAppFrog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PruebaAppFrog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF0AD2C1AA60E9B005829B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF0AD2D1AA60E9B005829B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */,
 				1D397F461AA8EAC3003F37E9 /* ListaPreguntas.h */,
 				1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */,
+				1D397F491AA8F2D9003F37E9 /* Reglas.h */,
+				1D397F4A1AA8F2D9003F37E9 /* Reglas.m */,
 				1DF0AD381AA60E9B005829B8 /* Main.storyboard */,
 				1DF0AD3B1AA60E9B005829B8 /* Images.xcassets */,
 				1DF0AD3D1AA60E9B005829B8 /* LaunchScreen.xib */,
@@ -266,6 +271,7 @@
 				1D397F481AA8EAC3003F37E9 /* ListaPreguntas.m in Sources */,
 				1D397F3C1AA8EA3B003F37E9 /* Fallaste.m in Sources */,
 				1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */,
+				1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */,
 				1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */,
 				1DF0AD371AA60E9B005829B8 /* Index.m in Sources */,
 				1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */,

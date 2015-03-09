@@ -20,7 +20,9 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <segue destination="KvQ-Ck-Ga4" kind="modal" identifier="SegueIndexToJugador" id="mMZ-37-Wad"/>
-                        <segue destination="36h-c5-x91" kind="modal" id="hAp-e1-JNi"/>
+                        <segue destination="36h-c5-x91" kind="modal" identifier="SegueIndexToRecords" id="hAp-e1-JNi"/>
+                        <segue destination="bLe-Or-Tpf" kind="modal" identifier="SegueIndexToReglas" id="D82-OH-fVH"/>
+                        <segue destination="EHr-dJ-qgE" kind="modal" identifier="SagueIndexToClave" id="27e-XD-Gef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -41,6 +43,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="iJb-lv-Mly" kind="modal" identifier="SegueJugadorToPreguntas" id="7ch-T6-qGh"/>
+                        <segue destination="bLe-Or-Tpf" kind="modal" identifier="SegueJugadorToReglas" id="YR3-uS-xt0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LlO-Fe-VBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +66,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="c4N-8z-FNk" kind="modal" identifier="SeguePreguntasToCorrecto" id="NVi-3b-87U"/>
+                        <segue destination="62c-xY-1nc" kind="modal" identifier="SeguePreguntasToFallaste" id="0ty-WL-InJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzT-VR-uho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +89,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="iJb-lv-Mly" kind="modal" identifier="SegueCorrectoToPreguntas" id="azr-fy-PlE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf5-Xj-10X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,6 +111,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="iJb-lv-Mly" kind="modal" identifier="SegueFallasteToPreguntas" id="dZH-7g-N6W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uJ-WZ-E6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,6 +133,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SuegeRecordsToIndex" id="7Vy-pT-ukQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9j-qs-zhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -136,6 +155,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueClaveToIndex" id="skR-Fs-YbY"/>
+                        <segue destination="9ow-oB-Bud" kind="modal" identifier="SegueClaveToGeneraPreguntas" id="5bP-6v-aIh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OI5-Bg-iiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,6 +178,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="gZz-nw-kmd" kind="modal" identifier="SegueGeneraPreguntasToListaPreguntas" id="5sv-z8-BjK"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueGeneraPreguntasToIndex" id="BVc-ei-E9m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5F-KN-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,10 +201,42 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueListaPreguntasToIndex" id="vyh-gP-RAY"/>
+                        <segue destination="9ow-oB-Bud" kind="modal" identifier="SegueLIstaPreguntasToGeneraPreguntas" id="2CK-ge-hHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Heb-Z4-8X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2907" y="381"/>
         </scene>
+        <!--Reglas-->
+        <scene sceneID="A7f-xp-4oI">
+            <objects>
+                <viewController id="bLe-Or-Tpf" userLabel="Reglas" customClass="Reglas" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nc1-sy-w9H"/>
+                        <viewControllerLayoutGuide type="bottom" id="lbz-YT-coN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S2e-lt-1RJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueReglasToIndex" id="Pjp-eu-WY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaQ-IK-yQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3082" y="592"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Pjp-eu-WY5"/>
+        <segue reference="YR3-uS-xt0"/>
+        <segue reference="azr-fy-PlE"/>
+        <segue reference="2CK-ge-hHj"/>
+    </inferredMetricsTieBreakers>
 </document>
