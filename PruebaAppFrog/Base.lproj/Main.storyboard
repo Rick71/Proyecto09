@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-fs-35f">
-                                <rect key="frame" x="40" y="116" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IndexAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-fs-35f">
+                                <rect key="frame" x="40" y="144" width="240" height="100"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPa-Li-QAa">
                                 <rect key="frame" x="96" y="319" width="136" height="51"/>
@@ -292,6 +292,9 @@
             <point key="canvasLocation" x="3082" y="592"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IndexAppFrog.png" width="178" height="64"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Pjp-eu-WY5"/>
         <segue reference="D82-OH-fVH"/>
