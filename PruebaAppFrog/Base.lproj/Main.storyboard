@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IndexAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="CDY-fs-35f">
-                                <rect key="frame" x="40" y="144" width="240" height="100"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPa-Li-QAa">
                                 <rect key="frame" x="96" y="319" width="136" height="51"/>
                                 <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,7 +27,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zw-CM-FpV">
-                                <rect key="frame" x="96" y="395" width="136" height="46"/>
+                                <rect key="frame" x="96" y="393" width="136" height="46"/>
                                 <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
                                 <size key="titleShadowOffset" width="2" height="0.0"/>
@@ -39,6 +36,14 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App Frogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDF-IU-iHW">
+                                <rect key="frame" x="66" y="45" width="189" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t4h-1S-q43">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
@@ -65,14 +70,9 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App Frogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDF-IU-iHW">
-                                <rect key="frame" x="66" y="45" width="189" height="49"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="0.0" height="-2"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IndexAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="f8l-kw-eP0">
+                                <rect key="frame" x="40" y="123" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26" y="381"/>
+            <point key="canvasLocation" x="-23" y="377"/>
         </scene>
         <!--Jugador-->
         <scene sceneID="Eq9-Tf-bJE">
@@ -99,6 +99,69 @@
                     <view key="view" contentMode="scaleToFill" id="leq-IS-MOD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App Frogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeR-MY-JZH">
+                                <rect key="frame" x="66" y="45" width="189" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrb-PL-dK8">
+                                <rect key="frame" x="96" y="416" width="136" height="46"/>
+                                <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Listo">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre:" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebf-ho-Opy">
+                                <rect key="frame" x="54" y="269" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido:" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dt5-xD-0D6">
+                                <rect key="frame" x="54" y="312" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Edad:" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gea-Nk-U86">
+                                <rect key="frame" x="54" y="357" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jQh-wb-vil">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="hSU-1R-Euc">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JgD-h7-Xnq">
+                                            <rect key="frame" x="16" y="4" width="118" height="36"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Más">
+                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem title="MenuJugador" style="plain" id="daO-bX-7rr">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bbA-hi-82O">
+                                            <rect key="frame" x="127" y="7" width="195" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Reglas">
+                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IndexAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="ezh-os-6Ax">
+                                <rect key="frame" x="40" y="110" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -109,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LlO-Fe-VBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="381"/>
+            <point key="canvasLocation" x="362" y="377"/>
         </scene>
         <!--Preguntas-->
         <scene sceneID="Vx2-8x-BVH">
@@ -122,6 +185,21 @@
                     <view key="view" contentMode="scaleToFill" id="F2i-cL-Bpn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-N6-f9W">
+                                <rect key="frame" x="0.0" y="163" width="320" height="144"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="118" id="Yxm-rd-0OU">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yxm-rd-0OU" id="sSs-eP-HVB">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -132,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzT-VR-uho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="723" y="381"/>
+            <point key="canvasLocation" x="726" y="377"/>
         </scene>
         <!--Correcto-->
         <scene sceneID="86X-Qf-oeE">
@@ -145,6 +223,21 @@
                     <view key="view" contentMode="scaleToFill" id="0st-CQ-IZH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correcto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx2-64-YJc">
+                                <rect key="frame" x="99" y="64" width="122" height="33"/>
+                                <color key="backgroundColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CorrectoAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="kOV-4S-Ecy">
+                                <rect key="frame" x="81" y="143" width="158" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Correcto2appFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-gQ-TpC">
+                                <rect key="frame" x="63" y="333" width="195" height="104"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -154,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf5-Xj-10X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="381"/>
+            <point key="canvasLocation" x="1095" y="377"/>
         </scene>
         <!--Fallaste-->
         <scene sceneID="zL3-Eg-Jok">
@@ -167,6 +260,21 @@
                     <view key="view" contentMode="scaleToFill" id="pm6-tv-OBG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FallasteAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="yoj-G8-M1d">
+                                <rect key="frame" x="99" y="135" width="133" height="127"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fallaste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDE-Fp-Zuv">
+                                <rect key="frame" x="99" y="64" width="122" height="33"/>
+                                <color key="backgroundColor" red="0.97488557450000002" green="0.122546766" blue="0.17774922700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fallaste2AppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="SP2-Ia-dMb">
+                                <rect key="frame" x="63" y="333" width="195" height="104"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -176,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5uJ-WZ-E6K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1448" y="381"/>
+            <point key="canvasLocation" x="1447" y="377"/>
         </scene>
         <!--Records-->
         <scene sceneID="F5t-LT-27j">
@@ -198,7 +306,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9j-qs-zhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="381"/>
+            <point key="canvasLocation" x="1804" y="377"/>
         </scene>
         <!--Clave-->
         <scene sceneID="o69-5x-gjn">
@@ -221,7 +329,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OI5-Bg-iiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2175" y="381"/>
+            <point key="canvasLocation" x="2174" y="377"/>
         </scene>
         <!--GeneraPreguntas-->
         <scene sceneID="4Oo-7b-BLG">
@@ -244,7 +352,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5F-KN-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2538" y="381"/>
+            <point key="canvasLocation" x="2535" y="377"/>
         </scene>
         <!--ListaPreguntas-->
         <scene sceneID="Qvq-df-ePq">
@@ -267,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Heb-Z4-8X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2907" y="381"/>
+            <point key="canvasLocation" x="2907" y="377"/>
         </scene>
         <!--Reglas-->
         <scene sceneID="A7f-xp-4oI">
@@ -289,16 +397,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YaQ-IK-yQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3082" y="592"/>
+            <point key="canvasLocation" x="3281" y="377"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Correcto2appFrog.png" width="188" height="86"/>
+        <image name="CorrectoAppFrog.png" width="190" height="172"/>
+        <image name="Fallaste2AppFrog.png" width="182" height="85"/>
+        <image name="FallasteAppFrog.png" width="131" height="158"/>
         <image name="IndexAppFrog.png" width="178" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Pjp-eu-WY5"/>
-        <segue reference="D82-OH-fVH"/>
-        <segue reference="azr-fy-PlE"/>
+        <segue reference="vyh-gP-RAY"/>
         <segue reference="2CK-ge-hHj"/>
+        <segue reference="7ch-T6-qGh"/>
+        <segue reference="YR3-uS-xt0"/>
     </inferredMetricsTieBreakers>
 </document>
