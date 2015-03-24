@@ -24,4 +24,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)BtnReglas:(id)sender {
+    [self performSegueWithIdentifier:@"SegueIndexToReglas" sender:self];
+}
+
+- (IBAction)BtnElaborarPreguntas:(id)sender {
+    [self performSegueWithIdentifier:@"SagueIndexToClave" sender:self];
+}
+
+- (IBAction)BtnJugar:(id)sender {
+    [self performSegueWithIdentifier:@"SegueIndexToJugador" sender:self];}
+
+- (IBAction)BtnRecords:(id)sender {
+    [self performSegueWithIdentifier:@"SegueIndexToRecords" sender:self];}
 @end

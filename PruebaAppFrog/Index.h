@@ -10,6 +10,19 @@
 
 @interface Index : UIViewController
 
+//buttons
+- (IBAction)BtnJugar:(id)sender;
+
+- (IBAction)BtnRecords:(id)sender;
+
+//buttons Tool Bar
+- (IBAction)BtnReglas:(id)sender;
+
+- (IBAction)BtnElaborarPreguntas:(id)sender;
+
+//Image View
+@property (strong, nonatomic) IBOutlet UIImageView *ImgIndexAppFrog;
+
 
 @end
 
