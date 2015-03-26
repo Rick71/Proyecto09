@@ -14,5 +14,9 @@
 
 - (IBAction)BtnInicio:(id)sender;
 
+//Button
+
+- (IBAction)BtnConsultarPreguntas:(id)sender;
+
 
 @end

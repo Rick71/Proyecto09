@@ -37,4 +37,7 @@
 - (IBAction)BtnInicio:(id)sender {
     [self performSegueWithIdentifier:@"SegueGeneraPreguntasToIndex" sender:self];
 }
+- (IBAction)BtnConsultarPreguntas:(id)sender {
+    [self performSegueWithIdentifier:@"SegueGeneraPreguntasToListaPreguntas" sender:self];
+}
 @end

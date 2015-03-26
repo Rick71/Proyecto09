@@ -43,6 +43,6 @@
 }
 
 - (IBAction)BtnAgregar:(id)sender {
-    
+    [self performSegueWithIdentifier:@"SegueLIstaPreguntasToGeneraPreguntas" sender:self];
 }
 @end
