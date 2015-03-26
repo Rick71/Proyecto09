@@ -10,4 +10,9 @@
 
 @interface Preguntas : UIViewController
 
+//Button
+
+- (IBAction)BtnInicio:(id)sender;
+
+
 @end

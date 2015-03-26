@@ -34,4 +34,15 @@
 }
 */
 
+- (IBAction)BtnInicio:(id)sender {
+    [self performSegueWithIdentifier:@"SegueListaPreguntasToIndex" sender:self];
+}
+
+- (IBAction)BtnBorrar:(id)sender {
+    
+}
+
+- (IBAction)BtnAgregar:(id)sender {
+    
+}
 @end

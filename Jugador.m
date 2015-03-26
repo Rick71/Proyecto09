@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)BtnListo:(id)sender {
+    [self performSegueWithIdentifier:@"SegueJugadorToPreguntas" sender:self];}
+
+- (IBAction)BtnInicio:(id)sender {
+    [self performSegueWithIdentifier:@"SegueJugadorToIndex" sender:self];}
+
+- (IBAction)BtnReglas:(id)sender {
+    [self performSegueWithIdentifier:@"SegueJugadorToReglas" sender:self];}
 @end

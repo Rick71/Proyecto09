@@ -34,4 +34,7 @@
 }
 */
 
+- (IBAction)BtnSiguientePregunta:(id)sender {
+    [self performSegueWithIdentifier:@"SegueCorrectoToPreguntas" sender:self];
+}
 @end

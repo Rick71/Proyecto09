@@ -34,4 +34,7 @@
 }
 */
 
+- (IBAction)BtnInicio:(id)sender {
+    [self performSegueWithIdentifier:@"SegueGeneraPreguntasToIndex" sender:self];
+}
 @end

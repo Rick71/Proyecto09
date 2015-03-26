@@ -10,4 +10,13 @@
 
 @interface Clave : UIViewController
 
+//Button
+
+- (IBAction)BtnAceptar:(id)sender;
+
+
+ //Button ToolBar
+
+- (IBAction)BtnInicio:(id)sender;
+
 @end

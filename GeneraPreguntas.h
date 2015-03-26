@@ -10,4 +10,9 @@
 
 @interface GeneraPreguntas : UIViewController
 
+//Button ToolBar
+
+- (IBAction)BtnInicio:(id)sender;
+
+
 @end

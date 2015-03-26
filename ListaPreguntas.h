@@ -10,4 +10,13 @@
 
 @interface ListaPreguntas : UIViewController
 
+//Button ToolBar
+
+- (IBAction)BtnInicio:(id)sender;
+
+- (IBAction)BtnBorrar:(id)sender;
+
+- (IBAction)BtnAgregar:(id)sender;
+
+
 @end

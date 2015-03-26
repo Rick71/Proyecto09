@@ -10,4 +10,20 @@
 
 @interface Jugador : UIViewController
 
+//Buttons
+- (IBAction)BtnListo:(id)sender;
+
+
+//Buttons ToolBar
+- (IBAction)BtnInicio:(id)sender;
+
+- (IBAction)BtnReglas:(id)sender;
+
+//Text
+@property (strong, nonatomic) IBOutlet UITextField *TxtNombre;
+
+@property (strong, nonatomic) IBOutlet UITextField *TxtApellido;
+
+@property (strong, nonatomic) IBOutlet UITextField *TxtEdad;
+
 @end

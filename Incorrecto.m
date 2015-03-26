@@ -1,18 +1,18 @@
 //
-//  Fallaste.m
+//  Incorrecto.m
 //  PruebaAppFrog
 //
-//  Created by Ricardo Vera on 05/03/15.
+//  Created by Ricardo Vera on 25/03/15.
 //  Copyright (c) 2015 Comercomp. All rights reserved.
 //
 
-#import "Fallaste.h"
+#import "Incorrecto.h"
 
-@interface Fallaste ()
+@interface Incorrecto ()
 
 @end
 
-@implementation Fallaste
+@implementation Incorrecto
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,4 +34,8 @@
 }
 */
 
+- (IBAction)BtnSiguientePregunta:(id)sender {
+    
+    [self performSegueWithIdentifier:@"SegueIncorrectoToPreguntas" sender:self];
+}
 @end

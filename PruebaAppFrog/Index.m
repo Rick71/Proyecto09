@@ -33,9 +33,11 @@
     [self performSegueWithIdentifier:@"SagueIndexToClave" sender:self];
 }
 
-- (IBAction)BtnJugar:(id)sender {
-    [self performSegueWithIdentifier:@"SegueIndexToJugador" sender:self];}
 
 - (IBAction)BtnRecords:(id)sender {
     [self performSegueWithIdentifier:@"SegueIndexToRecords" sender:self];}
+
+- (IBAction)BtnJugar:(id)sender {
+    }
+
 @end

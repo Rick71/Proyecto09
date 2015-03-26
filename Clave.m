@@ -34,4 +34,11 @@
 }
 */
 
+- (IBAction)BtnInicio:(id)sender {
+    [self performSegueWithIdentifier:@"SegueClaveToIndex" sender:self];
+}
+
+- (IBAction)BtnAceptar:(id)sender {
+    [self performSegueWithIdentifier:@"SegueClaveToGeneraPreguntas" sender:self];
+}
 @end

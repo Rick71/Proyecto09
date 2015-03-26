@@ -10,12 +10,12 @@
 		1D397F331AA8E963003F37E9 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F321AA8E963003F37E9 /* Jugador.m */; };
 		1D397F361AA8E9EC003F37E9 /* Preguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F351AA8E9EC003F37E9 /* Preguntas.m */; };
 		1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F381AA8EA0D003F37E9 /* Correcto.m */; };
-		1D397F3C1AA8EA3B003F37E9 /* Fallaste.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F3B1AA8EA3B003F37E9 /* Fallaste.m */; };
 		1D397F3F1AA8EA5F003F37E9 /* Records.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F3E1AA8EA5F003F37E9 /* Records.m */; };
 		1D397F421AA8EA7D003F37E9 /* Clave.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F411AA8EA7D003F37E9 /* Clave.m */; };
 		1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */; };
 		1D397F481AA8EAC3003F37E9 /* ListaPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */; };
 		1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F4A1AA8F2D9003F37E9 /* Reglas.m */; };
+		1DDD159A1AC3818300C987FE /* Incorrecto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD15991AC3818300C987FE /* Incorrecto.m */; };
 		1DEB2B741AB0D97500BE308A /* Correcto2appFrog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEB2B701AB0D97500BE308A /* Correcto2appFrog.png */; };
 		1DEB2B751AB0D97500BE308A /* CorrectoAppFrog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEB2B711AB0D97500BE308A /* CorrectoAppFrog.png */; };
 		1DEB2B761AB0D97500BE308A /* Fallaste2AppFrog.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEB2B721AB0D97500BE308A /* Fallaste2AppFrog.png */; };
@@ -49,8 +49,6 @@
 		1D397F351AA8E9EC003F37E9 /* Preguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Preguntas.m; path = ../Preguntas.m; sourceTree = "<group>"; };
 		1D397F371AA8EA0D003F37E9 /* Correcto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Correcto.h; path = ../Correcto.h; sourceTree = "<group>"; };
 		1D397F381AA8EA0D003F37E9 /* Correcto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Correcto.m; path = ../Correcto.m; sourceTree = "<group>"; };
-		1D397F3A1AA8EA3B003F37E9 /* Fallaste.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fallaste.h; path = ../Fallaste.h; sourceTree = "<group>"; };
-		1D397F3B1AA8EA3B003F37E9 /* Fallaste.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fallaste.m; path = ../Fallaste.m; sourceTree = "<group>"; };
 		1D397F3D1AA8EA5F003F37E9 /* Records.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Records.h; path = ../Records.h; sourceTree = "<group>"; };
 		1D397F3E1AA8EA5F003F37E9 /* Records.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Records.m; path = ../Records.m; sourceTree = "<group>"; };
 		1D397F401AA8EA7D003F37E9 /* Clave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Clave.h; path = ../Clave.h; sourceTree = "<group>"; };
@@ -61,6 +59,8 @@
 		1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaPreguntas.m; path = ../ListaPreguntas.m; sourceTree = "<group>"; };
 		1D397F491AA8F2D9003F37E9 /* Reglas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reglas.h; path = ../Reglas.h; sourceTree = "<group>"; };
 		1D397F4A1AA8F2D9003F37E9 /* Reglas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reglas.m; path = ../Reglas.m; sourceTree = "<group>"; };
+		1DDD15981AC3818300C987FE /* Incorrecto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Incorrecto.h; path = ../Incorrecto.h; sourceTree = "<group>"; };
+		1DDD15991AC3818300C987FE /* Incorrecto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Incorrecto.m; path = ../Incorrecto.m; sourceTree = "<group>"; };
 		1DEB2B701AB0D97500BE308A /* Correcto2appFrog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Correcto2appFrog.png; path = "../../../Imagenes AppFrog/Correcto2appFrog.png"; sourceTree = "<group>"; };
 		1DEB2B711AB0D97500BE308A /* CorrectoAppFrog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CorrectoAppFrog.png; path = "../../../Imagenes AppFrog/CorrectoAppFrog.png"; sourceTree = "<group>"; };
 		1DEB2B721AB0D97500BE308A /* Fallaste2AppFrog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Fallaste2AppFrog.png; path = "../../../Imagenes AppFrog/Fallaste2AppFrog.png"; sourceTree = "<group>"; };
@@ -146,8 +146,8 @@
 				1D397F351AA8E9EC003F37E9 /* Preguntas.m */,
 				1D397F371AA8EA0D003F37E9 /* Correcto.h */,
 				1D397F381AA8EA0D003F37E9 /* Correcto.m */,
-				1D397F3A1AA8EA3B003F37E9 /* Fallaste.h */,
-				1D397F3B1AA8EA3B003F37E9 /* Fallaste.m */,
+				1DDD15981AC3818300C987FE /* Incorrecto.h */,
+				1DDD15991AC3818300C987FE /* Incorrecto.m */,
 				1D397F3D1AA8EA5F003F37E9 /* Records.h */,
 				1D397F3E1AA8EA5F003F37E9 /* Records.m */,
 				1D397F401AA8EA7D003F37E9 /* Clave.h */,
@@ -300,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DF0AD341AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld in Sources */,
+				1DDD159A1AC3818300C987FE /* Incorrecto.m in Sources */,
 				1D397F481AA8EAC3003F37E9 /* ListaPreguntas.m in Sources */,
-				1D397F3C1AA8EA3B003F37E9 /* Fallaste.m in Sources */,
 				1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */,
 				1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */,
 				1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */,

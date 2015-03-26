@@ -11,11 +11,12 @@
 @interface Index : UIViewController
 
 //buttons
-- (IBAction)BtnJugar:(id)sender;
-
 - (IBAction)BtnRecords:(id)sender;
 
-//buttons Tool Bar
+- (IBAction)BtnJugar:(id)sender;
+
+
+//buttons ToolBar
 - (IBAction)BtnReglas:(id)sender;
 
 - (IBAction)BtnElaborarPreguntas:(id)sender;
