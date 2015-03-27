@@ -980,10 +980,10 @@
         <image name="PreguntasAppFrog.png" width="135" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tWK-5U-YKz"/>
+        <segue reference="skR-Fs-YbY"/>
+        <segue reference="U9F-dw-yIA"/>
         <segue reference="mMZ-37-Wad"/>
         <segue reference="YR3-uS-xt0"/>
         <segue reference="7ch-T6-qGh"/>
-        <segue reference="4gd-Gc-SvD"/>
     </inferredMetricsTieBreakers>
 </document>

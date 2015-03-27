@@ -7,7 +7,6 @@
 //
 
 #import "Jugador.h"
-UIAlertView     *alert;
 
 @interface Jugador ()
 
@@ -40,16 +39,15 @@ UIAlertView     *alert;
 
 
 - (IBAction)BtnListo:(id)sender {
-    /*Implementacion de Parse
-    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
-    testObject[@"Nombre"] = self.TxtNombre.text;
-    testObject[@"Apellido"] = self.TxtApellido.text;
-    testObject[@"Edad"] = self.TxtEdad.text;
+    //Implementacion de Parse
+    PFObject *testObject = [PFObject objectWithClassName:@"Datos"];
+    testObject[@"Nombre"] = self.Nombre.text;
+    testObject[@"Apellido"] = self.Apellido.text;
+    testObject[@"Edad"] = self.Edad.text;
         if([testObject saveInBackground]){
         NSLog(@"Objeto Guardado en Parse");
-     */
- }
-
+        }
+}
 
 
 - (IBAction)BtnInicio:(id)sender {
