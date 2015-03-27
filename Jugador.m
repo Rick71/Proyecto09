@@ -7,6 +7,7 @@
 //
 
 #import "Jugador.h"
+UIAlertView     *alert;
 
 @interface Jugador ()
 
@@ -34,12 +35,28 @@
 }
 */
 
+//Buttons
+
+
+
 - (IBAction)BtnListo:(id)sender {
-    [self performSegueWithIdentifier:@"SegueJugadorToPreguntas" sender:self];}
+    /*Implementacion de Parse
+    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+    testObject[@"Nombre"] = self.TxtNombre.text;
+    testObject[@"Apellido"] = self.TxtApellido.text;
+    testObject[@"Edad"] = self.TxtEdad.text;
+        if([testObject saveInBackground]){
+        NSLog(@"Objeto Guardado en Parse");
+     */
+ }
+
+
 
 - (IBAction)BtnInicio:(id)sender {
-    [self performSegueWithIdentifier:@"SegueJugadorToIndex" sender:self];}
+    [self performSegueWithIdentifier:@"SegueJugadorToIndex" sender:self];
+}
 
 - (IBAction)BtnReglas:(id)sender {
-    [self performSegueWithIdentifier:@"SegueJugadorToReglas" sender:self];}
+    [self performSegueWithIdentifier:@"SegueJugadorToReglas" sender:self];
+}
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface Jugador : UIViewController
 
@@ -15,15 +16,19 @@
 
 
 //Buttons ToolBar
+
 - (IBAction)BtnInicio:(id)sender;
 
 - (IBAction)BtnReglas:(id)sender;
 
+
 //Text
-@property (strong, nonatomic) IBOutlet UITextField *TxtNombre;
 
-@property (strong, nonatomic) IBOutlet UITextField *TxtApellido;
+@property (strong, nonatomic) IBOutlet UITextField *Nombre;
 
-@property (strong, nonatomic) IBOutlet UITextField *TxtEdad;
+@property (strong, nonatomic) IBOutlet UITextField *Edad;
+
+@property (strong, nonatomic) IBOutlet UITextField *Apellido;
+
 
 @end

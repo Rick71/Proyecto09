@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
+    }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,10 +34,33 @@
 }
 */
 
+//Button
+
 - (IBAction)BtnInicio:(id)sender {
     [self performSegueWithIdentifier:@"SegueGeneraPreguntasToIndex" sender:self];
 }
+
+- (IBAction)BtnAyuda:(id)sender {
+    [self performSegueWithIdentifier:@"SegueGeneraPreguntasToAyuda" sender:self];
+}
+
 - (IBAction)BtnConsultarPreguntas:(id)sender {
     [self performSegueWithIdentifier:@"SegueGeneraPreguntasToListaPreguntas" sender:self];
 }
+
+- (IBAction)BtnGuardar:(id)sender {
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+    testObject[@"Tema"] = self.TxtTema.text;
+    testObject[@"Pregunta"] = self.TxtPregunta.text;
+    testObject[@"OpcionA"] = self.TxtOpcionA.text;
+    testObject[@"OpcionB"] = self.TxtOpcionB.text;
+    testObject[@"OpcionC"] = self.TxtOpcionC.text;
+    testObject[@"Respuesta"] = self.TxtRespuesta.text;
+    if([testObject saveInBackground]){
+        NSLog(@"Objeto Guardado en Parse");
+    }
+}
+
+
 @end

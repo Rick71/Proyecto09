@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gZz-nw-kmd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Index-->
@@ -9,8 +9,8 @@
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="Index" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="4WC-tc-VAD"/>
+                        <viewControllerLayoutGuide type="bottom" id="q3w-OG-Qcx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -68,7 +68,7 @@
                                 </state>
                                 <connections>
                                     <action selector="BtnJugar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nGq-TY-ird"/>
-                                    <segue destination="KvQ-Ck-Ga4" kind="modal" identifier="SegueIndexToJugador" id="ey0-Po-5bR"/>
+                                    <segue destination="KvQ-Ck-Ga4" kind="presentation" identifier="SegueIndexToJugador" id="ey0-Po-5bR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xet-bq-ymd">
@@ -89,23 +89,23 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="ImgIndexAppFrog" destination="JC7-sE-gI0" id="S4k-io-JQS"/>
-                        <segue destination="KvQ-Ck-Ga4" kind="modal" identifier="SegueIndexToJugador" id="mMZ-37-Wad"/>
-                        <segue destination="36h-c5-x91" kind="modal" identifier="SegueIndexToRecords" id="hAp-e1-JNi"/>
-                        <segue destination="bLe-Or-Tpf" kind="modal" identifier="SegueIndexToReglas" id="D82-OH-fVH"/>
-                        <segue destination="EHr-dJ-qgE" kind="modal" identifier="SagueIndexToClave" id="27e-XD-Gef"/>
+                        <segue destination="KvQ-Ck-Ga4" kind="presentation" identifier="SegueIndexToJugador" id="mMZ-37-Wad"/>
+                        <segue destination="36h-c5-x91" kind="presentation" identifier="SegueIndexToRecords" id="hAp-e1-JNi"/>
+                        <segue destination="bLe-Or-Tpf" kind="presentation" identifier="SegueIndexToReglas" id="D82-OH-fVH"/>
+                        <segue destination="EHr-dJ-qgE" kind="presentation" identifier="SagueIndexToClave" id="27e-XD-Gef"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23" y="377"/>
+            <point key="canvasLocation" x="-23" y="376.99999999999994"/>
         </scene>
         <!--Jugador-->
         <scene sceneID="Eq9-Tf-bJE">
             <objects>
                 <viewController id="KvQ-Ck-Ga4" userLabel="Jugador" customClass="Jugador" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="tYM-1Z-9mV"/>
-                        <viewControllerLayoutGuide type="bottom" id="nyX-Xq-6ZR"/>
+                        <viewControllerLayoutGuide type="top" id="WyZ-Cl-pR3"/>
+                        <viewControllerLayoutGuide type="bottom" id="wSB-Fx-Lc4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="leq-IS-MOD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -119,6 +119,19 @@
                                 <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="-2"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IndexAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="ezh-os-6Ax">
+                                <rect key="frame" x="40" y="110" width="240" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AST-2w-gMm">
+                                <rect key="frame" x="57" y="246" width="214" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edad" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48g-5D-Dti">
+                                <rect key="frame" x="57" y="355" width="214" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrb-PL-dK8">
                                 <rect key="frame" x="96" y="416" width="136" height="46"/>
                                 <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -131,51 +144,38 @@
                                     <action selector="BtnListo:" destination="KvQ-Ck-Ga4" eventType="touchUpInside" id="vA1-pQ-qo2"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IndexAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="ezh-os-6Ax">
-                                <rect key="frame" x="40" y="110" width="240" height="128"/>
-                            </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wge-Re-77B">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-S7-BwF">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem style="plain" id="NXu-36-4zh">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ITv-lJ-aR3">
-                                            <rect key="frame" x="16" y="7" width="130" height="30"/>
+                                    <barButtonItem style="plain" id="k5O-x0-7aF">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3Vy-r2-I7p">
+                                            <rect key="frame" x="16" y="7" width="142" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Inicio">
                                                 <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <action selector="BtnInicio:" destination="KvQ-Ck-Ga4" eventType="touchUpInside" id="kqY-zp-FOh"/>
+                                                <action selector="BtnInicio:" destination="KvQ-Ck-Ga4" eventType="touchUpInside" id="etF-k4-R0D"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
-                                    <barButtonItem style="plain" id="fw2-G8-dG6">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8su-Hk-s1J">
-                                            <rect key="frame" x="156" y="7" width="160" height="30"/>
+                                    <barButtonItem style="plain" id="IBl-eO-TCf">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GGO-Hp-5Lx">
+                                            <rect key="frame" x="142" y="7" width="158" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Reglas">
                                                 <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <action selector="BtnReglas:" destination="KvQ-Ck-Ga4" eventType="touchUpInside" id="QyH-3v-ucg"/>
+                                                <action selector="BtnReglas:" destination="KvQ-Ck-Ga4" eventType="touchUpInside" id="1s7-Et-7iS"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nombre" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AST-2w-gMm">
-                                <rect key="frame" x="57" y="246" width="214" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Edad" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="48g-5D-Dti">
-                                <rect key="frame" x="57" y="355" width="214" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Apellido" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cg5-02-dtJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cg5-02-dtJ">
                                 <rect key="frame" x="57" y="298" width="214" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -185,22 +185,25 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="iJb-lv-Mly" kind="modal" identifier="SegueJugadorToPreguntas" id="7ch-T6-qGh"/>
-                        <segue destination="bLe-Or-Tpf" kind="modal" identifier="SegueJugadorToReglas" id="YR3-uS-xt0"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueJugadorToIndex" id="tWK-5U-YKz"/>
+                        <outlet property="Apellido" destination="Cg5-02-dtJ" id="hSp-wq-cbv"/>
+                        <outlet property="Edad" destination="48g-5D-Dti" id="QTi-aG-cVs"/>
+                        <outlet property="Nombre" destination="AST-2w-gMm" id="ITt-kL-scb"/>
+                        <segue destination="iJb-lv-Mly" kind="presentation" identifier="SegueJugadorToPreguntas" id="7ch-T6-qGh"/>
+                        <segue destination="bLe-Or-Tpf" kind="presentation" identifier="SegueJugadorToReglas" id="YR3-uS-xt0"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SegueJugadorToIndex" id="tWK-5U-YKz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LlO-Fe-VBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="362" y="377"/>
+            <point key="canvasLocation" x="362" y="376"/>
         </scene>
         <!--Preguntas-->
         <scene sceneID="Vx2-8x-BVH">
             <objects>
                 <viewController id="iJb-lv-Mly" userLabel="Preguntas" customClass="Preguntas" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hlc-Y9-195"/>
-                        <viewControllerLayoutGuide type="bottom" id="b6b-Vo-T4W"/>
+                        <viewControllerLayoutGuide type="top" id="j7a-de-0b4"/>
+                        <viewControllerLayoutGuide type="bottom" id="ljM-it-wC7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="F2i-cL-Bpn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -208,6 +211,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ely-hK-vPt">
                                 <rect key="frame" x="24" y="281" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="A">
                                     <color key="titleColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,6 +219,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHX-IE-Mnv">
                                 <rect key="frame" x="24" y="319" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="B">
                                     <color key="titleColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -222,6 +227,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chr-ZX-zxN">
                                 <rect key="frame" x="24" y="357" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="C">
                                     <color key="titleColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -233,11 +239,6 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDx-aJ-eVa">
-                                <rect key="frame" x="61" y="282" width="242" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hYU-W2-Vqr">
                                 <rect key="frame" x="62" y="320" width="242" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -300,26 +301,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oDx-aJ-eVa">
+                                <rect key="frame" x="61" y="282" width="242" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="c4N-8z-FNk" kind="modal" identifier="SeguePreguntasToCorrecto" id="NVi-3b-87U"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SeguePreguntasToIndex" id="v4V-iS-xh3"/>
+                        <segue destination="c4N-8z-FNk" kind="presentation" identifier="SeguePreguntasToCorrecto" id="NVi-3b-87U"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SeguePreguntasToIndex" id="v4V-iS-xh3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzT-VR-uho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="377"/>
+            <point key="canvasLocation" x="726" y="376.99999999999994"/>
         </scene>
         <!--Correcto-->
         <scene sceneID="86X-Qf-oeE">
             <objects>
                 <viewController id="c4N-8z-FNk" userLabel="Correcto" customClass="Correcto" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dbt-Um-xoe"/>
-                        <viewControllerLayoutGuide type="bottom" id="QHX-3c-62g"/>
+                        <viewControllerLayoutGuide type="top" id="nS5-SI-Hm8"/>
+                        <viewControllerLayoutGuide type="bottom" id="z4p-KO-9A5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0st-CQ-IZH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -361,20 +367,20 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="iJb-lv-Mly" kind="modal" identifier="SegueCorrectoToPreguntas" id="azr-fy-PlE"/>
+                        <segue destination="iJb-lv-Mly" kind="presentation" identifier="SegueCorrectoToPreguntas" id="azr-fy-PlE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xf5-Xj-10X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1095" y="377"/>
+            <point key="canvasLocation" x="1095" y="376.99999999999994"/>
         </scene>
         <!--Incorrecto-->
         <scene sceneID="iiM-Dw-Yqk">
             <objects>
                 <viewController id="fSg-hA-FRW" userLabel="Incorrecto" customClass="Incorrecto" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="C4N-SV-JnZ"/>
-                        <viewControllerLayoutGuide type="bottom" id="QEx-T2-3vM"/>
+                        <viewControllerLayoutGuide type="top" id="o95-Cn-Z97"/>
+                        <viewControllerLayoutGuide type="bottom" id="PSz-pa-Xbq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4tq-rg-1gm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -416,20 +422,20 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="iJb-lv-Mly" kind="modal" identifier="SegueIncorrectoToPreguntas" id="G24-Zz-957"/>
+                        <segue destination="iJb-lv-Mly" kind="presentation" identifier="SegueIncorrectoToPreguntas" id="G24-Zz-957"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBS-5G-8SQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450" y="377"/>
+            <point key="canvasLocation" x="1450" y="376.99999999999994"/>
         </scene>
         <!--Records-->
         <scene sceneID="F5t-LT-27j">
             <objects>
                 <viewController id="36h-c5-x91" userLabel="Records" customClass="Records" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L8t-11-K81"/>
-                        <viewControllerLayoutGuide type="bottom" id="7I9-Bt-6EA"/>
+                        <viewControllerLayoutGuide type="top" id="Qrr-dn-2ku"/>
+                        <viewControllerLayoutGuide type="bottom" id="4jm-mh-aoG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IMp-Ii-Ijy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -486,7 +492,7 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" id="x9T-DP-iT8"/>
+                                                <segue destination="vXZ-lx-hvc" kind="presentation" id="x9T-DP-iT8"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -505,20 +511,20 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SuegeRecordsToIndex" id="7Vy-pT-ukQ"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SuegeRecordsToIndex" id="7Vy-pT-ukQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9j-qs-zhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1791" y="377"/>
+            <point key="canvasLocation" x="1790.9999999999998" y="376.99999999999994"/>
         </scene>
         <!--Clave-->
         <scene sceneID="o69-5x-gjn">
             <objects>
                 <viewController id="EHr-dJ-qgE" userLabel="Clave" customClass="Clave" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mQG-th-BWX"/>
-                        <viewControllerLayoutGuide type="bottom" id="z9W-OQ-ywu"/>
+                        <viewControllerLayoutGuide type="top" id="uEx-OU-v27"/>
+                        <viewControllerLayoutGuide type="bottom" id="WLw-9N-9Uo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ti5-6y-0RY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -552,7 +558,7 @@
                                     <action selector="BtnAceptar:" destination="EHr-dJ-qgE" eventType="touchUpInside" id="tC8-lZ-rt3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Clave de acceso" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gku-u8-Mg8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clave de acceso" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gku-u8-Mg8">
                                 <rect key="frame" x="96" y="226" width="130" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -580,22 +586,22 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueClaveToIndex" id="skR-Fs-YbY"/>
-                        <segue destination="9ow-oB-Bud" kind="modal" identifier="SegueClaveToGeneraPreguntas" id="5bP-6v-aIh"/>
-                        <segue destination="9ow-oB-Bud" kind="modal" identifier="SegueClaveToGeneraPreguntas" id="U9F-dw-yIA"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SegueClaveToIndex" id="skR-Fs-YbY"/>
+                        <segue destination="9ow-oB-Bud" kind="presentation" identifier="SegueClaveToGeneraPreguntas" id="5bP-6v-aIh"/>
+                        <segue destination="9ow-oB-Bud" kind="presentation" identifier="SegueClaveToGeneraPreguntas" id="U9F-dw-yIA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OI5-Bg-iiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134" y="377"/>
+            <point key="canvasLocation" x="2134" y="376.99999999999994"/>
         </scene>
         <!--GeneraPreguntas-->
         <scene sceneID="4Oo-7b-BLG">
             <objects>
                 <viewController id="9ow-oB-Bud" userLabel="GeneraPreguntas" customClass="GeneraPreguntas" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ckq-Fj-gsf"/>
-                        <viewControllerLayoutGuide type="bottom" id="2X8-ty-z54"/>
+                        <viewControllerLayoutGuide type="top" id="NLU-Ks-xvH"/>
+                        <viewControllerLayoutGuide type="bottom" id="sG2-tg-Sk5"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XV1-Of-hbV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -617,50 +623,35 @@
                                 <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="-2"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Tema" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0db-oa-3Ca">
-                                <rect key="frame" x="112" y="167" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tema" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0db-oa-3Ca">
+                                <rect key="frame" x="54" y="143" width="213" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pregunta" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q46-XH-hIi">
-                                <rect key="frame" x="112" y="226" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pregunta" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q46-XH-hIi">
+                                <rect key="frame" x="54" y="182" width="213" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Respuesta" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gxb-Sq-PLu">
-                                <rect key="frame" x="112" y="290" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OpcionA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gxb-Sq-PLu">
+                                <rect key="frame" x="54" y="220" width="213" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctU-JD-dl0">
-                                <rect key="frame" x="86" y="369" width="149" height="46"/>
+                                <rect key="frame" x="86" y="394" width="149" height="46"/>
                                 <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Guardar">
                                     <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="BtnGuardar:" destination="9ow-oB-Bud" eventType="touchUpInside" id="aeb-dh-VHk"/>
+                                </connections>
                             </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mUZ-LS-ceO">
-                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
-                                <items>
-                                    <barButtonItem style="plain" id="ZK6-b3-wA8">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rLD-mG-7q2">
-                                            <rect key="frame" x="16" y="7" width="294" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Inicio">
-                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="BtnInicio:" destination="9ow-oB-Bud" eventType="touchUpInside" id="Y97-6F-8E5"/>
-                                            </connections>
-                                        </button>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2o-bF-r7B">
-                                <rect key="frame" x="54" y="436" width="213" height="46"/>
+                                <rect key="frame" x="54" y="458" width="213" height="46"/>
                                 <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Consultar Preguntas">
@@ -671,26 +662,79 @@
                                     <action selector="BtnConsultarPreguntas:" destination="9ow-oB-Bud" eventType="touchUpInside" id="lSg-9q-MRd"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OpcionB" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mh9-wI-33O">
+                                <rect key="frame" x="54" y="258" width="213" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OpcionC" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rXl-NF-eJb">
+                                <rect key="frame" x="54" y="296" width="213" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Respuesta A, B o C." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SVu-eM-opK">
+                                <rect key="frame" x="54" y="334" width="213" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mUZ-LS-ceO">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="ZK6-b3-wA8">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rLD-mG-7q2">
+                                            <rect key="frame" x="16" y="7" width="177" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Inicio">
+                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="BtnInicio:" destination="9ow-oB-Bud" eventType="touchUpInside" id="Y97-6F-8E5"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="8xV-Nb-CGh">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iff-rg-5jf">
+                                            <rect key="frame" x="203" y="7" width="43" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Ayuda">
+                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="BtnAyuda:" destination="9ow-oB-Bud" eventType="touchUpInside" id="eT3-QU-XXw"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="gZz-nw-kmd" kind="modal" identifier="SegueGeneraPreguntasToListaPreguntas" id="5sv-z8-BjK"/>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueGeneraPreguntasToIndex" id="BVc-ei-E9m"/>
+                        <outlet property="TxtOpcionA" destination="Gxb-Sq-PLu" id="Ird-6l-Vxs"/>
+                        <outlet property="TxtOpcionB" destination="Mh9-wI-33O" id="Drs-to-2by"/>
+                        <outlet property="TxtOpcionC" destination="rXl-NF-eJb" id="4nG-vb-g4X"/>
+                        <outlet property="TxtPregunta" destination="Q46-XH-hIi" id="ArD-zL-Bg3"/>
+                        <outlet property="TxtRespuesta" destination="SVu-eM-opK" id="1XF-gl-Fa9"/>
+                        <outlet property="TxtTema" destination="0db-oa-3Ca" id="3z5-9Q-NsW"/>
+                        <segue destination="gZz-nw-kmd" kind="presentation" identifier="SegueGeneraPreguntasToListaPreguntas" id="5sv-z8-BjK"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SegueGeneraPreguntasToIndex" id="BVc-ei-E9m"/>
+                        <segue destination="mAj-tM-Xgp" kind="modal" identifier="SegueGeneraPreguntasToAyuda" id="6zC-Pi-xZ6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5F-KN-bDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2502" y="377"/>
+            <point key="canvasLocation" x="2502" y="376"/>
         </scene>
         <!--ListaPreguntas-->
         <scene sceneID="Qvq-df-ePq">
             <objects>
                 <viewController id="gZz-nw-kmd" userLabel="ListaPreguntas" customClass="ListaPreguntas" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="WJM-oh-ror"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xur-oT-9zb"/>
+                        <viewControllerLayoutGuide type="top" id="8Jf-YC-K4R"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvA-No-N2C"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GpR-mp-bJQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
@@ -788,37 +832,29 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueListaPreguntasToIndex" id="vyh-gP-RAY"/>
-                        <segue destination="9ow-oB-Bud" kind="modal" identifier="SegueLIstaPreguntasToGeneraPreguntas" id="2CK-ge-hHj"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SegueListaPreguntasToIndex" id="vyh-gP-RAY"/>
+                        <segue destination="9ow-oB-Bud" kind="presentation" identifier="SegueLIstaPreguntasToGeneraPreguntas" id="2CK-ge-hHj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Heb-Z4-8X3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2926" y="377"/>
+            <point key="canvasLocation" x="2926" y="376.99999999999994"/>
         </scene>
         <!--Reglas-->
         <scene sceneID="A7f-xp-4oI">
             <objects>
                 <viewController id="bLe-Or-Tpf" userLabel="Reglas" customClass="Reglas" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Nc1-sy-w9H"/>
-                        <viewControllerLayoutGuide type="bottom" id="lbz-YT-coN"/>
+                        <viewControllerLayoutGuide type="top" id="bxG-t0-wEo"/>
+                        <viewControllerLayoutGuide type="bottom" id="tiq-CU-bY8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="S2e-lt-1RJ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AppFrogs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qa9-vd-QrJ">
-                                <rect key="frame" x="66" y="45" width="189" height="50"/>
+                                <rect key="frame" x="66" y="44" width="189" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <size key="shadowOffset" width="0.0" height="-2"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reglas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBX-Ir-W9H">
-                                <rect key="frame" x="75" y="102" width="171" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -828,7 +864,6 @@
                                 <rect key="frame" x="19" y="163" width="283" height="287"/>
                                 <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.87722050650000005" green="0.85719567490000004" blue="0.93698705810000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKe-1n-4QI">
@@ -843,7 +878,80 @@
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="vXZ-lx-hvc" kind="modal" id="C0d-Wo-C3w"/>
+                                                <segue destination="vXZ-lx-hvc" kind="presentation" id="C0d-Wo-C3w"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reglas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBX-Ir-W9H">
+                                <rect key="frame" x="75" y="102" width="171" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="SegueReglasToIndex" id="Pjp-eu-WY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YaQ-IK-yQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3281" y="376.99999999999994"/>
+        </scene>
+        <!--Ayuda-->
+        <scene sceneID="76r-Yx-wYM">
+            <objects>
+                <viewController id="mAj-tM-Xgp" userLabel="Ayuda" customClass="Ayuda" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oSk-x6-y9G"/>
+                        <viewControllerLayoutGuide type="bottom" id="mG7-5f-CaO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tYg-qU-YSP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Para llenar los campos se necesita hacer las preguntas dos incorrectas y una correcta ..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKh-oX-OMv">
+                                <rect key="frame" x="19" y="163" width="283" height="287"/>
+                                <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AppFrogs" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDW-xD-FQU">
+                                <rect key="frame" x="66" y="44" width="189" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ayuda" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0p-Ob-Wgp">
+                                <rect key="frame" x="75" y="102" width="171" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="-2"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgw-Pe-ulG">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="ON1-no-ss7">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BFI-FX-dgp">
+                                            <rect key="frame" x="16" y="7" width="305" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Regresar">
+                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="BtnRegresar:" destination="mAj-tM-Xgp" eventType="touchUpInside" id="Kol-kF-K2Z"/>
                                             </connections>
                                         </button>
                                     </barButtonItem>
@@ -854,12 +962,12 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueReglasToIndex" id="Pjp-eu-WY5"/>
+                        <segue destination="9ow-oB-Bud" kind="modal" identifier="SegueAyudaToGeneraPreguntas" id="4gd-Gc-SvD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YaQ-IK-yQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H4j-gJ-oMH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3281" y="377"/>
+            <point key="canvasLocation" x="3630" y="376"/>
         </scene>
     </scenes>
     <resources>
@@ -871,10 +979,10 @@
         <image name="PreguntasAppFrog.png" width="135" height="55"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BVc-ei-E9m"/>
-        <segue reference="2CK-ge-hHj"/>
-        <segue reference="D82-OH-fVH"/>
-        <segue reference="ey0-Po-5bR"/>
-        <segue reference="G24-Zz-957"/>
+        <segue reference="tWK-5U-YKz"/>
+        <segue reference="mMZ-37-Wad"/>
+        <segue reference="YR3-uS-xt0"/>
+        <segue reference="7ch-T6-qGh"/>
+        <segue reference="4gd-Gc-SvD"/>
     </inferredMetricsTieBreakers>
 </document>
