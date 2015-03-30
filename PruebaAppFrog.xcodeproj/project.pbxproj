@@ -15,6 +15,9 @@
 		1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */; };
 		1D397F481AA8EAC3003F37E9 /* ListaPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */; };
 		1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F4A1AA8F2D9003F37E9 /* Reglas.m */; };
+		1DA9D6FD1AC8CC2C000604C7 /* CellTema.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9D6FC1AC8CC2C000604C7 /* CellTema.m */; };
+		1DA9D7001AC8CC9C000604C7 /* CellPregunta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9D6FF1AC8CC9C000604C7 /* CellPregunta.m */; };
+		1DA9D7031AC8CCC0000604C7 /* CellOpcion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9D7021AC8CCC0000604C7 /* CellOpcion.m */; };
 		1DDD159A1AC3818300C987FE /* Incorrecto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD15991AC3818300C987FE /* Incorrecto.m */; };
 		1DE969FD1AC4695800112B15 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE969FC1AC4695800112B15 /* Accounts.framework */; };
 		1DE96A051AC485AD00112B15 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE96A001AC485AD00112B15 /* Bolts.framework */; };
@@ -81,6 +84,12 @@
 		1D397F471AA8EAC3003F37E9 /* ListaPreguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListaPreguntas.m; path = ../ListaPreguntas.m; sourceTree = "<group>"; };
 		1D397F491AA8F2D9003F37E9 /* Reglas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reglas.h; path = ../Reglas.h; sourceTree = "<group>"; };
 		1D397F4A1AA8F2D9003F37E9 /* Reglas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reglas.m; path = ../Reglas.m; sourceTree = "<group>"; };
+		1DA9D6FB1AC8CC2C000604C7 /* CellTema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTema.h; sourceTree = "<group>"; };
+		1DA9D6FC1AC8CC2C000604C7 /* CellTema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTema.m; sourceTree = "<group>"; };
+		1DA9D6FE1AC8CC9C000604C7 /* CellPregunta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellPregunta.h; sourceTree = "<group>"; };
+		1DA9D6FF1AC8CC9C000604C7 /* CellPregunta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellPregunta.m; sourceTree = "<group>"; };
+		1DA9D7011AC8CCC0000604C7 /* CellOpcion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOpcion.h; sourceTree = "<group>"; };
+		1DA9D7021AC8CCC0000604C7 /* CellOpcion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellOpcion.m; sourceTree = "<group>"; };
 		1DDD15981AC3818300C987FE /* Incorrecto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Incorrecto.h; path = ../Incorrecto.h; sourceTree = "<group>"; };
 		1DDD15991AC3818300C987FE /* Incorrecto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Incorrecto.m; path = ../Incorrecto.m; sourceTree = "<group>"; };
 		1DE969FC1AC4695800112B15 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -167,6 +176,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DA9D6FA1AC8CA12000604C7 /* Customized */ = {
+			isa = PBXGroup;
+			children = (
+				1DA9D6FB1AC8CC2C000604C7 /* CellTema.h */,
+				1DA9D6FC1AC8CC2C000604C7 /* CellTema.m */,
+				1DA9D6FE1AC8CC9C000604C7 /* CellPregunta.h */,
+				1DA9D6FF1AC8CC9C000604C7 /* CellPregunta.m */,
+				1DA9D7011AC8CCC0000604C7 /* CellOpcion.h */,
+				1DA9D7021AC8CCC0000604C7 /* CellOpcion.m */,
+			);
+			name = Customized;
+			sourceTree = "<group>";
+		};
 		1DDFA0431AAE4A2700F9AB36 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +241,7 @@
 		1DF0AD1F1AA60E9A005829B8 = {
 			isa = PBXGroup;
 			children = (
+				1DA9D6FA1AC8CA12000604C7 /* Customized */,
 				1DE969FE1AC4696900112B15 /* Frameworks */,
 				1DDFA0431AAE4A2700F9AB36 /* Imagenes */,
 				1DF0AD2A1AA60E9A005829B8 /* PruebaAppFrog */,
@@ -415,9 +438,12 @@
 				1D397F421AA8EA7D003F37E9 /* Clave.m in Sources */,
 				1D397F361AA8E9EC003F37E9 /* Preguntas.m in Sources */,
 				1DE96A281AC4A14100112B15 /* Ayuda.m in Sources */,
+				1DA9D7031AC8CCC0000604C7 /* CellOpcion.m in Sources */,
 				1D397F331AA8E963003F37E9 /* Jugador.m in Sources */,
+				1DA9D6FD1AC8CC2C000604C7 /* CellTema.m in Sources */,
 				1DF0AD2E1AA60E9B005829B8 /* main.m in Sources */,
 				1D397F3F1AA8EA5F003F37E9 /* Records.m in Sources */,
+				1DA9D7001AC8CC9C000604C7 /* CellPregunta.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
