@@ -20,6 +20,7 @@
  */
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>NSString 
 
 @class PFObject;
 @class PFQuery;

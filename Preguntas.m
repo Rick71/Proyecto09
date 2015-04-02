@@ -7,6 +7,11 @@
 //
 
 #import "Preguntas.h"
+#import <Parse/Parse.h>
+#import "CellTema.h"
+
+NSMutableArray *Tema;
+NSMutableArray *objetos;
 
 @interface Preguntas ()
 
@@ -16,9 +21,36 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self reload];
+}
+
+
+
+-(void)reload{
+    NSLog(@"Load");
+    
     // Do any additional setup after loading the view.
+// Inicializa la Base de Datos.
+    Tema = [[NSMutableArray alloc] init];
+        //nos trae la Información de Parse.
+    PFQuery *query = [PFQuery queryWithClassName:@"Preguntas"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error)
+     {
+         objetos = [NSMutableArray arrayWithArray:objects];
+         [self.TblMain reloadData];
+         
+     }];
+    NSLog(@"%lu", (unsigned long)[objetos count]);
+    NSLog(@"Exit load");
     
 }
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    //[self.TblMain reloadData];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -35,8 +67,5 @@
 }
 */
 
-- (IBAction)BtnInicio:(id)sender {
-    
-    [self performSegueWithIdentifier:@"SeguePreguntasToIndex" sender:self];
-}
 @end
+

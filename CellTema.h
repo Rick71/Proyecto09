@@ -10,4 +10,8 @@
 
 @interface CellTema : UITableViewCell
 
+//Labels
+
+@property (strong, nonatomic) IBOutlet UILabel *LblTema;
+
 @end

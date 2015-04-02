@@ -7,12 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+
+
 
 @interface Preguntas : UIViewController
 
 //Button
 
-- (IBAction)BtnInicio:(id)sender;
+
+
+//Tablet
+
+@property (strong, nonatomic) IBOutlet UITableView *TblMain;
+
+//Label
 
 
 @end

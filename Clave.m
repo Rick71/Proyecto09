@@ -34,6 +34,10 @@
 }
 */
 
+
+
+//button toolBar
+
 - (IBAction)BtnInicio:(id)sender {
     [self performSegueWithIdentifier:@"SegueClaveToIndex" sender:self];
 }

@@ -47,7 +47,7 @@
 }
 
 - (IBAction)BtnConsultarPreguntas:(id)sender {
-    [self performSegueWithIdentifier:@"SegueGeneraPreguntasToListaPreguntas" sender:self];
+    [self performSegueWithIdentifier:@"SegueGeneraPreguntasToListadoPreguntas" sender:self];
 }
 
 - (IBAction)BtnGuardar:(id)sender {

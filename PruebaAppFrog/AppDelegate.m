@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 
+
 @interface AppDelegate ()
 
 @end
@@ -52,6 +53,8 @@
     // Saves changes in the application's managed object context before the application terminates.
     [self saveContext];
 }
+
+/*
 
 #pragma mark - Core Data stack
 
@@ -133,4 +136,5 @@
     }
 }
 
+ */
 @end

@@ -1,20 +1,45 @@
 //
-//  Records.m
+//  ListadoPreguntas.m
 //  PruebaAppFrog
 //
-//  Created by Ricardo Vera on 31/03/15.
+//  Created by Ricardo Vera on 01/04/15.
 //  Copyright (c) 2015 Comercomp. All rights reserved.
 //
 
-#import "Records.h"
+#import "ListadoPreguntas.h"
 #import <Parse/Parse.h>
-#import <ParseUI/PFQueryTableViewController.h>
+#import "CellPreguntas.h"
 
-@interface Records ()
+
+@interface ListadoPreguntas ()
 
 @end
 
-@implementation Records
+@implementation ListadoPreguntas
+
+- (id)initWithCoder:(NSCoder *)aCoder
+{
+    self = [super initWithCoder:aCoder];
+    if (self) {
+        // Custom the table
+        
+        // The className to query on
+        self.parseClassName = @"Preguntas";
+        
+        // The key of the PFObject to display in the label of the default cell style
+        self.textKey = @"Pregunta";
+        
+        // Whether the built-in pull-to-refresh is enabled
+        self.pullToRefreshEnabled = YES;
+        
+        // Whether the built-in pagination is enabled
+        self.paginationEnabled = YES;
+        
+        // The number of objects to show per page
+        self.objectsPerPage = 9;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,12 +51,10 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-/*
-
-- (void)viewDidUnload{
+- (void)viewDidUnload
+{
     [super viewDidUnload];
 }
-
 
 - (PFQuery *)queryForTable
 {
@@ -41,7 +64,6 @@
     
     return query;
 }
-
 
 - (void) objectsDidLoad:(NSError *)error
 {
@@ -59,26 +81,25 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath object:(PFObject *)object {
     
-    static NSString *CellIdentifier = @"ListaCell";
+    static NSString *CellIdentifier = @"CellPreguntas";
     
-    preguntaCell *cell = (preguntaCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    CellPreguntas *cell = (CellPreguntas *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[preguntaCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[CellPreguntas alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     // Configure the cell
     
-    cell.lblPregunta.text = [object objectForKey:@"Pregunta"];
-    cell.lblRespuesta.text = [object objectForKey:@"Respuesta"];
-    
+    cell.LblPregunta.text = [object objectForKey:@"Pregunta"];
+    cell.LblRespuesta.text = [object objectForKey:@"Respuesta"];
     
     
     return cell;
 }
 
- */
+
+/*
 
 #pragma mark - Table view data source
 
@@ -93,6 +114,10 @@
     // Return the number of rows in the section.
     return 0;
 }
+ */
+
+
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

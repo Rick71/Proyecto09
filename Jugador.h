@@ -30,5 +30,8 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *Apellido;
 
+//tablet
+
+
 
 @end
