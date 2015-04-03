@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface Jugador : UIViewController
+@interface Jugador : UIViewController<UIAlertViewDelegate>
 
 //Buttons
 - (IBAction)BtnListo:(id)sender;

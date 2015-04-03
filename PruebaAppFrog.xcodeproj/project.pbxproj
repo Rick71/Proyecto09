@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D2A65841ACDB25E00005D81 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A65831ACDB25E00005D81 /* Usuario.m */; };
 		1D397F331AA8E963003F37E9 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F321AA8E963003F37E9 /* Jugador.m */; };
 		1D397F361AA8E9EC003F37E9 /* Preguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F351AA8E9EC003F37E9 /* Preguntas.m */; };
 		1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F381AA8EA0D003F37E9 /* Correcto.m */; };
@@ -68,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D2A65821ACDB25D00005D81 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuario.h; sourceTree = "<group>"; };
+		1D2A65831ACDB25E00005D81 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuario.m; sourceTree = "<group>"; };
 		1D397F311AA8E963003F37E9 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jugador.h; path = ../Jugador.h; sourceTree = "<group>"; };
 		1D397F321AA8E963003F37E9 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jugador.m; path = ../Jugador.m; sourceTree = "<group>"; };
 		1D397F341AA8E9EC003F37E9 /* Preguntas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Preguntas.h; path = ../Preguntas.h; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 		1DF0AD1F1AA60E9A005829B8 = {
 			isa = PBXGroup;
 			children = (
+				1D2A65821ACDB25D00005D81 /* Usuario.h */,
+				1D2A65831ACDB25E00005D81 /* Usuario.m */,
 				1DA9D6FA1AC8CA12000604C7 /* Customized */,
 				1DE969FE1AC4696900112B15 /* Frameworks */,
 				1DDFA0431AAE4A2700F9AB36 /* Imagenes */,
@@ -431,6 +436,7 @@
 				1DF0AD341AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld in Sources */,
 				1DDD159A1AC3818300C987FE /* Incorrecto.m in Sources */,
 				1D9833EA1ACB23F1006C9890 /* Records.m in Sources */,
+				1D2A65841ACDB25E00005D81 /* Usuario.m in Sources */,
 				1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */,
 				1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */,
 				1DC198751ACCE8720011A0CB /* ListadoPreguntas.m in Sources */,

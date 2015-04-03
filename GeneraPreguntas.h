@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 
-@interface GeneraPreguntas : UIViewController
+@interface GeneraPreguntas : UIViewController<UIAlertViewDelegate>
 
 //Button ToolBar
 - (IBAction)BtnInicio:(id)sender;
