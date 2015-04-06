@@ -10,7 +10,6 @@
 		1D2A65841ACDB25E00005D81 /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D2A65831ACDB25E00005D81 /* Usuario.m */; };
 		1D3415971AD04B4800461DC1 /* Pregunta.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3415961AD04B4800461DC1 /* Pregunta.m */; };
 		1D397F331AA8E963003F37E9 /* Jugador.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F321AA8E963003F37E9 /* Jugador.m */; };
-		1D397F361AA8E9EC003F37E9 /* Preguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F351AA8E9EC003F37E9 /* Preguntas.m */; };
 		1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F381AA8EA0D003F37E9 /* Correcto.m */; };
 		1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */; };
 		1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F4A1AA8F2D9003F37E9 /* Reglas.m */; };
@@ -75,8 +74,6 @@
 		1D3415961AD04B4800461DC1 /* Pregunta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pregunta.m; sourceTree = "<group>"; };
 		1D397F311AA8E963003F37E9 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jugador.h; path = ../Jugador.h; sourceTree = "<group>"; };
 		1D397F321AA8E963003F37E9 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jugador.m; path = ../Jugador.m; sourceTree = "<group>"; };
-		1D397F341AA8E9EC003F37E9 /* Preguntas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Preguntas.h; path = ../Preguntas.h; sourceTree = "<group>"; };
-		1D397F351AA8E9EC003F37E9 /* Preguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Preguntas.m; path = ../Preguntas.m; sourceTree = "<group>"; };
 		1D397F371AA8EA0D003F37E9 /* Correcto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Correcto.h; path = ../Correcto.h; sourceTree = "<group>"; };
 		1D397F381AA8EA0D003F37E9 /* Correcto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Correcto.m; path = ../Correcto.m; sourceTree = "<group>"; };
 		1D397F431AA8EAA4003F37E9 /* GeneraPreguntas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneraPreguntas.h; path = ../GeneraPreguntas.h; sourceTree = "<group>"; };
@@ -271,8 +268,6 @@
 				1DF0AD361AA60E9B005829B8 /* Index.m */,
 				1D397F311AA8E963003F37E9 /* Jugador.h */,
 				1D397F321AA8E963003F37E9 /* Jugador.m */,
-				1D397F341AA8E9EC003F37E9 /* Preguntas.h */,
-				1D397F351AA8E9EC003F37E9 /* Preguntas.m */,
 				1D397F371AA8EA0D003F37E9 /* Correcto.h */,
 				1D397F381AA8EA0D003F37E9 /* Correcto.m */,
 				1DDD15981AC3818300C987FE /* Incorrecto.h */,
@@ -444,7 +439,6 @@
 				1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */,
 				1DF0AD371AA60E9B005829B8 /* Index.m in Sources */,
 				1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */,
-				1D397F361AA8E9EC003F37E9 /* Preguntas.m in Sources */,
 				1DE96A281AC4A14100112B15 /* Ayuda.m in Sources */,
 				1DA9D7031AC8CCC0000604C7 /* CellOpcion.m in Sources */,
 				1D397F331AA8E963003F37E9 /* Jugador.m in Sources */,

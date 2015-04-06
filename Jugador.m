@@ -47,6 +47,7 @@
         if([testObject saveInBackground]){
         NSLog(@"Objeto Guardado en Parse");
         }
+    [self performSegueWithIdentifier:@"SegueJugadorToPregunta" sender:self];
 }
 
 
