@@ -12,4 +12,9 @@
 
 @interface ListadoPreguntas : PFQueryTableViewController
 
+//Button ToolBar
+
+- (IBAction)BtnRegresar:(id)sender;
+
+
 @end

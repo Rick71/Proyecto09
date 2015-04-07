@@ -170,4 +170,7 @@
 }
 */
 
+- (IBAction)BtnRegresar:(id)sender {
+    [self performSegueWithIdentifier:@"SegueListadoPreguntasToGeneraPreguntas" sender:self];
+}
 @end
