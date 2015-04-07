@@ -23,6 +23,11 @@
 
 - (IBAction)BtnLogin:(id)sender;
 
+//Button ToolBar
+
+- (IBAction)BtnInicio:(id)sender;
+
+
 
 
 @end

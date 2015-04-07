@@ -30,12 +30,9 @@
 }
 
 - (IBAction)BtnElaborarPreguntas:(id)sender {
-    [self performSegueWithIdentifier:@"SagueIndexToClave" sender:self];
+    [self performSegueWithIdentifier:@"SegueIndexToUsuario" sender:self];
 }
 
-
-- (IBAction)BtnRecords:(id)sender {
-    [self performSegueWithIdentifier:@"SegueIndexToRecords" sender:self];}
 
 - (IBAction)BtnJugar:(id)sender {
     }

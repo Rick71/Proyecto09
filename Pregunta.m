@@ -10,8 +10,11 @@
 #import <Parse/Parse.h>
 
 NSMutableArray *datos;
+UIAlertView *alert;
 int posicion;
-char *respuesta;
+int contador;
+
+
 
 @interface Pregunta ()
 
@@ -22,6 +25,8 @@ char *respuesta;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    contador = 0;
     
     datos = [[NSMutableArray alloc] init];
     posicion = 1;
@@ -34,6 +39,7 @@ char *respuesta;
             
             [datos addObject:object];
             NSLog(@"%@", object[@"Respuesta"]);
+           
         }
     }];
     
@@ -58,24 +64,10 @@ char *respuesta;
 - (IBAction)BtnA:(id)sender {
     
     
+   }
 
-}
-
+                    
 - (IBAction)BtnB:(id)sender {
-    
-    
-    /*
-     Comparar al accionar el boton de respuesta "B" comparandolo con la base de datos en Parse donde viene la respuesta correcta, si es B hace un Segue a la vista de Correcto para despues seguir a la siguiente pregunta, ademas de iniciar un contador para aumentar o disminuir las respuestas correctas o malas y al llegar a las 10 buenas terminar el juego.
-     
-     PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
-    *respuesta = testObject[@"Respuesta"];
-    [testObject saveInBackground];
-    
-    if ( *respuesta isEqualToString:@"Respuesta"); {
-        [self performSegueWithIdentifier:@"SegePreguntaToCorrecto" sender:self];
-    }
-     
-     */
 }
 
 - (IBAction)BtnC:(id)sender {
@@ -94,5 +86,14 @@ char *respuesta;
     self.OpcionC.text = testObject[@"OpcionC"];
         //self.Contador.text = testObject[@"posicion"];
     posicion++;
+
+}
+- (IBAction)BtnInicio:(id)sender {
+    [self performSegueWithIdentifier:@"SeguePreguntaToIndex" sender:self];
+}
+
+- (IBAction)BtnReglas:(id)sender {
+    [self performSegueWithIdentifier:@"SeguePreguntaToReglas" sender:self];
+    
 }
 @end

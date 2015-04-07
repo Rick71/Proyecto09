@@ -80,4 +80,7 @@ UIAlertView *alert;
     }
     
 }
+- (IBAction)BtnInicio:(id)sender {
+    [self performSegueWithIdentifier:@"SegueUsuarioToIndex" sender:self];
+}
 @end

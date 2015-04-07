@@ -35,4 +35,11 @@
 
 - (IBAction)BtnNext:(id)sender;
 
+//Button ToolBar
+
+- (IBAction)BtnInicio:(id)sender;
+
+- (IBAction)BtnReglas:(id)sender;
+
+
 @end

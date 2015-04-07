@@ -11,7 +11,7 @@
 @interface Index : UIViewController
 
 //buttons
-- (IBAction)BtnRecords:(id)sender;
+
 
 - (IBAction)BtnJugar:(id)sender;
 

@@ -13,7 +13,6 @@
 		1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F381AA8EA0D003F37E9 /* Correcto.m */; };
 		1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */; };
 		1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D397F4A1AA8F2D9003F37E9 /* Reglas.m */; };
-		1D9833EA1ACB23F1006C9890 /* Records.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D9833E91ACB23F1006C9890 /* Records.m */; };
 		1DA9D6FD1AC8CC2C000604C7 /* CellTema.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9D6FC1AC8CC2C000604C7 /* CellTema.m */; };
 		1DA9D7031AC8CCC0000604C7 /* CellOpcion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA9D7021AC8CCC0000604C7 /* CellOpcion.m */; };
 		1DC198751ACCE8720011A0CB /* ListadoPreguntas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC198741ACCE8720011A0CB /* ListadoPreguntas.m */; };
@@ -55,6 +54,8 @@
 		1DF0AD3C1AA60E9B005829B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0AD3B1AA60E9B005829B8 /* Images.xcassets */; };
 		1DF0AD3F1AA60E9B005829B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DF0AD3D1AA60E9B005829B8 /* LaunchScreen.xib */; };
 		1DF0AD4B1AA60E9B005829B8 /* PruebaAppFrogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF0AD4A1AA60E9B005829B8 /* PruebaAppFrogTests.m */; };
+		1DF8421B1AD3517000524D23 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8421A1AD3517000524D23 /* Record.m */; };
+		1DF8421E1AD3552B00524D23 /* CellRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF8421D1AD3552B00524D23 /* CellRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +81,6 @@
 		1D397F441AA8EAA4003F37E9 /* GeneraPreguntas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneraPreguntas.m; path = ../GeneraPreguntas.m; sourceTree = "<group>"; };
 		1D397F491AA8F2D9003F37E9 /* Reglas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reglas.h; path = ../Reglas.h; sourceTree = "<group>"; };
 		1D397F4A1AA8F2D9003F37E9 /* Reglas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reglas.m; path = ../Reglas.m; sourceTree = "<group>"; };
-		1D9833E81ACB23F1006C9890 /* Records.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Records.h; path = ../Records.h; sourceTree = "<group>"; };
-		1D9833E91ACB23F1006C9890 /* Records.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Records.m; path = ../Records.m; sourceTree = "<group>"; };
 		1DA9D6FB1AC8CC2C000604C7 /* CellTema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellTema.h; sourceTree = "<group>"; };
 		1DA9D6FC1AC8CC2C000604C7 /* CellTema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellTema.m; sourceTree = "<group>"; };
 		1DA9D7011AC8CCC0000604C7 /* CellOpcion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellOpcion.h; sourceTree = "<group>"; };
@@ -135,6 +134,10 @@
 		1DF0AD441AA60E9B005829B8 /* PruebaAppFrogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PruebaAppFrogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF0AD491AA60E9B005829B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF0AD4A1AA60E9B005829B8 /* PruebaAppFrogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PruebaAppFrogTests.m; sourceTree = "<group>"; };
+		1DF842191AD3517000524D23 /* Record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Record.h; sourceTree = "<group>"; };
+		1DF8421A1AD3517000524D23 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		1DF8421C1AD3552B00524D23 /* CellRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellRecord.h; sourceTree = "<group>"; };
+		1DF8421D1AD3552B00524D23 /* CellRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellRecord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,10 @@
 		1DF0AD1F1AA60E9A005829B8 = {
 			isa = PBXGroup;
 			children = (
+				1DF8421C1AD3552B00524D23 /* CellRecord.h */,
+				1DF8421D1AD3552B00524D23 /* CellRecord.m */,
+				1DF842191AD3517000524D23 /* Record.h */,
+				1DF8421A1AD3517000524D23 /* Record.m */,
 				1D3415951AD04B4800461DC1 /* Pregunta.h */,
 				1D3415961AD04B4800461DC1 /* Pregunta.m */,
 				1DA9D6FA1AC8CA12000604C7 /* Customized */,
@@ -272,8 +279,6 @@
 				1D397F381AA8EA0D003F37E9 /* Correcto.m */,
 				1DDD15981AC3818300C987FE /* Incorrecto.h */,
 				1DDD15991AC3818300C987FE /* Incorrecto.m */,
-				1D9833E81ACB23F1006C9890 /* Records.h */,
-				1D9833E91ACB23F1006C9890 /* Records.m */,
 				1D2A65821ACDB25D00005D81 /* Usuario.h */,
 				1D2A65831ACDB25E00005D81 /* Usuario.m */,
 				1D397F431AA8EAA4003F37E9 /* GeneraPreguntas.h */,
@@ -427,16 +432,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DF8421E1AD3552B00524D23 /* CellRecord.m in Sources */,
 				1DC198781ACCEBD30011A0CB /* CellPreguntas.m in Sources */,
 				1DF0AD341AA60E9B005829B8 /* PruebaAppFrog.xcdatamodeld in Sources */,
 				1DDD159A1AC3818300C987FE /* Incorrecto.m in Sources */,
-				1D9833EA1ACB23F1006C9890 /* Records.m in Sources */,
 				1D2A65841ACDB25E00005D81 /* Usuario.m in Sources */,
 				1D3415971AD04B4800461DC1 /* Pregunta.m in Sources */,
 				1DF0AD311AA60E9B005829B8 /* AppDelegate.m in Sources */,
 				1D397F4B1AA8F2D9003F37E9 /* Reglas.m in Sources */,
 				1DC198751ACCE8720011A0CB /* ListadoPreguntas.m in Sources */,
 				1D397F451AA8EAA4003F37E9 /* GeneraPreguntas.m in Sources */,
+				1DF8421B1AD3517000524D23 /* Record.m in Sources */,
 				1DF0AD371AA60E9B005829B8 /* Index.m in Sources */,
 				1D397F391AA8EA0D003F37E9 /* Correcto.m in Sources */,
 				1DE96A281AC4A14100112B15 /* Ayuda.m in Sources */,

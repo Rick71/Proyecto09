@@ -51,10 +51,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)viewDidUnload
-{
-    [super viewDidUnload];
-}
+    
 
 - (PFQuery *)queryForTable
 {

@@ -1,32 +1,29 @@
 //
-//  Correcto.m
+//  Record.m
 //  PruebaAppFrog
 //
-//  Created by Ricardo Vera on 05/03/15.
+//  Created by Ricardo Vera on 06/04/15.
 //  Copyright (c) 2015 Comercomp. All rights reserved.
 //
 
-#import "Correcto.h"
+#import "Record.h"
 
-
-
-@interface Correcto ()
+@interface Record ()
 
 @end
 
-@implementation Correcto
+@implementation Record
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation
@@ -38,7 +35,4 @@
 }
 */
 
-- (IBAction)BtnSiguientePregunta:(id)sender {
-    [self performSegueWithIdentifier:@"SegeCorrectoToPregunta" sender:self];
-}
 @end
