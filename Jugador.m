@@ -8,6 +8,8 @@
 
 #import "Jugador.h"
 
+UIAlertView *alert;
+
 @interface Jugador ()
 
 @end
@@ -39,6 +41,21 @@
 
 
 - (IBAction)BtnListo:(id)sender {
+    
+    NSString *Nombre  = self.Nombre.text;
+    NSString *Apellido  = self.Apellido.text;
+    NSString *Edad = self.Edad.text;
+    
+    if((Nombre.length == 0)||(Apellido.length == 0)||(Edad.length == 0)){
+        alert = [[UIAlertView alloc] initWithTitle:@"Faltan campos!"
+                                           message:@"Oops! Parece que no haz llenado todos los campos!"
+                                          delegate:self
+                                 cancelButtonTitle:@"Ok"
+                                 otherButtonTitles: nil];
+        [alert show];
+    }
+    
+    else{
     //Implementacion de Parse
     PFObject *testObject = [PFObject objectWithClassName:@"Datos"];
     testObject[@"Nombre"] = self.Nombre.text;
@@ -48,8 +65,8 @@
         NSLog(@"Objeto Guardado en Parse");
         }
     [self performSegueWithIdentifier:@"SegueJugadorToPregunta" sender:self];
+    }
 }
-
 
 - (IBAction)BtnInicio:(id)sender {
     [self performSegueWithIdentifier:@"SegueJugadorToIndex" sender:self];
