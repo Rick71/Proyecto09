@@ -670,30 +670,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PreguntasAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="du0-3M-amC">
-                                <rect key="frame" x="20" y="396" width="159" height="84"/>
+                                <rect key="frame" x="20" y="381" width="159" height="84"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contador" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uVo-ao-xT9">
-                                <rect key="frame" x="209" y="437" width="91" height="30"/>
+                                <rect key="frame" x="209" y="422" width="91" height="30"/>
                                 <color key="backgroundColor" red="0.83080808080808077" green="0.83080808080808077" blue="0.83080808080808077" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Posición" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTF-Dm-cQG">
-                                <rect key="frame" x="209" y="408" width="91" height="21"/>
+                                <rect key="frame" x="209" y="393" width="91" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3v-zU-dOj">
-                                <rect key="frame" x="144" y="494" width="32" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="BtnNext:" destination="ZPR-K4-Xlf" eventType="touchUpInside" id="Kmn-by-Prj"/>
-                                </connections>
-                            </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKz-rF-cC1">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <items>
@@ -779,6 +770,16 @@
                                     <action selector="BtnC:" destination="ZPR-K4-Xlf" eventType="touchUpInside" id="sT8-Ax-GqT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3v-zU-dOj">
+                                <rect key="frame" x="107" y="467" width="106" height="51"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnNext:" destination="ZPR-K4-Xlf" eventType="touchUpInside" id="Kmn-by-Prj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -798,7 +799,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bed-D2-Upo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="247" y="356"/>
+            <point key="canvasLocation" x="247" y="365"/>
         </scene>
         <!--Usuario-->
         <scene sceneID="6KU-N6-sVk">
@@ -1001,9 +1002,9 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="mMZ-37-Wad"/>
-        <segue reference="bcs-0j-7oZ"/>
+        <segue reference="tBR-Ic-4GS"/>
+        <segue reference="p26-AU-RDE"/>
         <segue reference="D82-OH-fVH"/>
         <segue reference="h2e-9i-L5g"/>
-        <segue reference="p26-AU-RDE"/>
     </inferredMetricsTieBreakers>
 </document>

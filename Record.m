@@ -17,6 +17,34 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+   /*
+        int counter = 0;
+        pos = 0;
+        
+    
+        NSDate *hoy = [[NSDate alloc] init];
+        ScoreArray = [NSMutableArray arrayWithArray:[[DBScore getSharedInstance]allRecords]];
+        NSDateFormatter *dateFormat  =[[NSDateFormatter alloc]init];
+        [dateFormat setDateFormat:@"cccc, MMMM dd, YYYY, \n hh:mm aa"];
+        NSString *prettyVersion = [dateFormat stringFromDate:hoy];
+        
+        for(NSArray *record in ScoreArray){
+            if([[record objectAtIndex:1] integerValue] == lastScore){
+                pos = counter;
+            }
+            counter++;
+        }
+        
+        self.Intentos.text = [NSString stringWithFormat:@"%d", counter];
+        self.Fecha.text = prettyVersion;
+        
+    }
+    
+*/
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

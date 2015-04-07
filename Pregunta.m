@@ -86,8 +86,11 @@ int contador;
     self.OpcionC.text = testObject[@"OpcionC"];
         //self.Contador.text = testObject[@"posicion"];
     posicion++;
-
+    contador++;
+    
+    self.Contador.text = [NSString stringWithFormat:@"%d", contador];
 }
+
 - (IBAction)BtnInicio:(id)sender {
     [self performSegueWithIdentifier:@"SeguePreguntaToIndex" sender:self];
 }

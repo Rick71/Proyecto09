@@ -71,8 +71,8 @@
 /* Begin PBXFileReference section */
 		1D2A65821ACDB25D00005D81 /* Usuario.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Usuario.h; path = ../Usuario.h; sourceTree = "<group>"; };
 		1D2A65831ACDB25E00005D81 /* Usuario.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Usuario.m; path = ../Usuario.m; sourceTree = "<group>"; };
-		1D3415951AD04B4800461DC1 /* Pregunta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pregunta.h; sourceTree = "<group>"; };
-		1D3415961AD04B4800461DC1 /* Pregunta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pregunta.m; sourceTree = "<group>"; };
+		1D3415951AD04B4800461DC1 /* Pregunta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pregunta.h; path = ../Pregunta.h; sourceTree = "<group>"; };
+		1D3415961AD04B4800461DC1 /* Pregunta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pregunta.m; path = ../Pregunta.m; sourceTree = "<group>"; };
 		1D397F311AA8E963003F37E9 /* Jugador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jugador.h; path = ../Jugador.h; sourceTree = "<group>"; };
 		1D397F321AA8E963003F37E9 /* Jugador.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jugador.m; path = ../Jugador.m; sourceTree = "<group>"; };
 		1D397F371AA8EA0D003F37E9 /* Correcto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Correcto.h; path = ../Correcto.h; sourceTree = "<group>"; };
@@ -246,8 +246,6 @@
 				1DF8421D1AD3552B00524D23 /* CellRecord.m */,
 				1DF842191AD3517000524D23 /* Record.h */,
 				1DF8421A1AD3517000524D23 /* Record.m */,
-				1D3415951AD04B4800461DC1 /* Pregunta.h */,
-				1D3415961AD04B4800461DC1 /* Pregunta.m */,
 				1DA9D6FA1AC8CA12000604C7 /* Customized */,
 				1DE969FE1AC4696900112B15 /* Frameworks */,
 				1DDFA0431AAE4A2700F9AB36 /* Imagenes */,
@@ -275,6 +273,8 @@
 				1DF0AD361AA60E9B005829B8 /* Index.m */,
 				1D397F311AA8E963003F37E9 /* Jugador.h */,
 				1D397F321AA8E963003F37E9 /* Jugador.m */,
+				1D3415951AD04B4800461DC1 /* Pregunta.h */,
+				1D3415961AD04B4800461DC1 /* Pregunta.m */,
 				1D397F371AA8EA0D003F37E9 /* Correcto.h */,
 				1D397F381AA8EA0D003F37E9 /* Correcto.m */,
 				1DDD15981AC3818300C987FE /* Incorrecto.h */,
