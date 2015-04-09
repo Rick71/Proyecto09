@@ -137,7 +137,7 @@ char A;
         NSLog(@"Preguntas correctas %d posicion actual %d", preguntasCorrectas, posicion);
         self.Contador.text = [NSString stringWithFormat:@"%d", contador];
     }else{
-        [self performSegueWithIdentifier:@"SeguePreguntaToIndex" sender:self];
+        [self performSegueWithIdentifier:@"SeguePreguntaToGracias" sender:self];
         
     }
     

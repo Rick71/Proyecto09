@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="szQ-zx-hsr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
@@ -554,6 +554,69 @@
             </objects>
             <point key="canvasLocation" x="3259" y="356"/>
         </scene>
+        <!--Gracias-->
+        <scene sceneID="ysB-ab-fpg">
+            <objects>
+                <viewController id="szQ-zx-hsr" userLabel="Gracias" customClass="Gracias" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZe-cG-pe5"/>
+                        <viewControllerLayoutGuide type="bottom" id="FhF-cb-Pih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oXh-DG-6HE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gracias por Jugar!!!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuO-Fw-Xx5">
+                                <rect key="frame" x="85" y="50" width="151" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiU-k2-eNt">
+                                <rect key="frame" x="90" y="401" width="141" height="30"/>
+                                <color key="backgroundColor" red="0.17917390380000001" green="0.59142203280000005" blue="0.23588839289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Jugar de Nuevo">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnJugarDeNuevo:" destination="szQ-zx-hsr" eventType="touchUpInside" id="BwG-TU-7HY"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CorrectoAppFrog.png" translatesAutoresizingMaskIntoConstraints="NO" id="aWY-EU-nNj">
+                                <rect key="frame" x="40" y="176" width="240" height="172"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tO9-ni-pcf">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="jYJ-x2-FSa">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Cs4-T5-7zi">
+                                            <rect key="frame" x="16" y="7" width="304" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Inicio">
+                                                <color key="titleColor" red="0.0" green="0.70401278410000001" blue="0.0040275267099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="BtnInicio:" destination="szQ-zx-hsr" eventType="touchUpInside" id="pfD-sL-81L"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="ZPR-K4-Xlf" kind="modal" identifier="SegueGraciasToPregunta" id="yop-EQ-iTd"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="SegueGraciasToIndex" id="TbU-2o-tJP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBi-iJ-VNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3656" y="356"/>
+        </scene>
         <!--Record-->
         <scene sceneID="2vF-ag-MPM">
             <objects>
@@ -795,6 +858,7 @@
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="SeguePreguntaToIndex" id="tBR-Ic-4GS"/>
                         <segue destination="bLe-Or-Tpf" kind="modal" identifier="SeguePreguntaToReglas" id="oYq-mi-n32"/>
                         <segue destination="fSg-hA-FRW" kind="modal" identifier="SeguePreguntaToIncorrecto" id="O8R-EN-359"/>
+                        <segue destination="szQ-zx-hsr" kind="modal" identifier="SeguePreguntaToGracias" id="A6T-Bp-gZX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bed-D2-Upo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1001,10 +1065,10 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tBR-Ic-4GS"/>
-        <segue reference="p26-AU-RDE"/>
+        <segue reference="g6a-dv-ZdB"/>
+        <segue reference="TbU-2o-tJP"/>
+        <segue reference="yop-EQ-iTd"/>
         <segue reference="oYq-mi-n32"/>
         <segue reference="mMZ-37-Wad"/>
-        <segue reference="g6a-dv-ZdB"/>
     </inferredMetricsTieBreakers>
 </document>
