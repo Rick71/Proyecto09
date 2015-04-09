@@ -34,6 +34,7 @@ char A;
     
     
     PFQuery *query = [PFQuery queryWithClassName:@"Preguntas"];
+    [query orderByDescending:@"createdAt"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
         for(id object in objects){
             
@@ -66,7 +67,7 @@ char A;
    // int respuesta;
     
     PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
-    testObject = datos[posicion];
+    testObject = datos[posicion -1];
    
     
     NSLog(@"Respuesta correcta %@ Respuesta del Usuario A", testObject[@"Respuesta"]);
@@ -84,7 +85,7 @@ char A;
                     
 - (IBAction)BtnB:(id)sender {
     PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
-    testObject = datos[posicion];
+    testObject = datos[posicion -1];
     
     
     NSLog(@"Respuesta correcta %@ Respuesta del Usuario B", testObject[@"Respuesta"]);
@@ -101,7 +102,7 @@ char A;
 
 - (IBAction)BtnC:(id)sender {
     PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
-    testObject = datos[posicion];
+    testObject = datos[posicion -1];
     
     
     NSLog(@"Respuesta correcta %@ Respuesta del Usuario C", testObject[@"Respuesta"]);
@@ -121,6 +122,9 @@ char A;
         PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
         
         testObject = datos[posicion];
+        
+        NSLog(@"Pregunta %@ Respuesta A %@ Respuesta B %@ respuesta C %@ Respuesta Correcta %@", testObject[@"Pregunta"], testObject[@"OpcionA"], testObject[@"OpcionB"], testObject[@"OpcionC"], testObject[@"Respuesta"]);
+        
         
         self.LblTemas.text = testObject[@"Tema"];
         self.LblPreguntas.text = testObject[@"Pregunta"];
