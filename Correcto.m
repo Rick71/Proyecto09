@@ -39,6 +39,6 @@
 */
 
 - (IBAction)BtnSiguientePregunta:(id)sender {
-    [self performSegueWithIdentifier:@"SegeCorrectoToPregunta" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

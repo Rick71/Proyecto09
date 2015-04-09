@@ -13,7 +13,8 @@ NSMutableArray *datos;
 UIAlertView *alert;
 int posicion;
 int contador;
-
+int preguntasCorrectas;
+char A;
 
 
 @interface Pregunta ()
@@ -27,7 +28,7 @@ int contador;
     // Do any additional setup after loading the view.
     
     contador = 0;
-    
+    preguntasCorrectas = 0;
     datos = [[NSMutableArray alloc] init];
     posicion = 1;
     
@@ -38,8 +39,7 @@ int contador;
             
             
             [datos addObject:object];
-            NSLog(@"%@", object[@"Respuesta"]);
-           
+            //NSLog(@"%@", object[@"Respuesta"]);
         }
     }];
     
@@ -63,32 +63,83 @@ int contador;
 
 - (IBAction)BtnA:(id)sender {
     
+   // int respuesta;
     
-   }
+    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+    testObject = datos[posicion];
+   
+    
+    NSLog(@"Respuesta correcta %@ Respuesta del Usuario A", testObject[@"Respuesta"]);
+    
+    if ([testObject[@"Respuesta"] isEqualToString:@"A"]) {
+        
+        preguntasCorrectas++;
+        
+        [self performSegueWithIdentifier:@"SeguePreguntaToCorrecto" sender:self];
+    }else{
+        [self performSegueWithIdentifier:@"SeguePreguntaToIncorrecto" sender:self];
+    }
+}
 
                     
 - (IBAction)BtnB:(id)sender {
+    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+    testObject = datos[posicion];
+    
+    
+    NSLog(@"Respuesta correcta %@ Respuesta del Usuario B", testObject[@"Respuesta"]);
+    
+    if ([testObject[@"Respuesta"] isEqualToString:@"B"]) {
+        
+        preguntasCorrectas++;
+        
+        [self performSegueWithIdentifier:@"SeguePreguntaToCorrecto" sender:self];
+    }else{
+        [self performSegueWithIdentifier:@"SeguePreguntaToIncorrecto" sender:self];
+    }
 }
 
 - (IBAction)BtnC:(id)sender {
+    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+    testObject = datos[posicion];
+    
+    
+    NSLog(@"Respuesta correcta %@ Respuesta del Usuario C", testObject[@"Respuesta"]);
+    
+    if ([testObject[@"Respuesta"] isEqualToString:@"C"]) {
+        
+        preguntasCorrectas++;
+        
+        [self performSegueWithIdentifier:@"SeguePreguntaToCorrecto" sender:self];
+    }else{
+        [self performSegueWithIdentifier:@"SeguePreguntaToIncorrecto" sender:self];
+    }
 }
 
 - (IBAction)BtnNext:(id)sender {
     
-    PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+    NSLog(@"Preguntas correctas %d", preguntasCorrectas);
     
-    testObject = datos[posicion];
-    
-    self.LblTemas.text = testObject[@"Tema"];
-    self.LblPreguntas.text = testObject[@"Pregunta"];
-    self.OpcionA.text = testObject[@"OpcionA"];
-    self.OpcionB.text = testObject[@"OpcionB"];
-    self.OpcionC.text = testObject[@"OpcionC"];
+    if(posicion < datos.count){
+        PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
+        
+        testObject = datos[posicion];
+        
+        self.LblTemas.text = testObject[@"Tema"];
+        self.LblPreguntas.text = testObject[@"Pregunta"];
+        self.OpcionA.text = testObject[@"OpcionA"];
+        self.OpcionB.text = testObject[@"OpcionB"];
+        self.OpcionC.text = testObject[@"OpcionC"];
         //self.Contador.text = testObject[@"posicion"];
-    posicion++;
-    contador++;
+        posicion++;
+        contador++;
+        self.Contador.text = [NSString stringWithFormat:@"%d", contador];
+    }else{
+        [self performSegueWithIdentifier:@"SeguePreguntaToIndex" sender:self];
+        
+    }
     
-    self.Contador.text = [NSString stringWithFormat:@"%d", contador];
+    
 }
 
 - (IBAction)BtnInicio:(id)sender {
