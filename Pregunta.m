@@ -30,7 +30,7 @@ char A;
     contador = 0;
     preguntasCorrectas = 0;
     datos = [[NSMutableArray alloc] init];
-    posicion = 1;
+    posicion = 0;
     
     
     PFQuery *query = [PFQuery queryWithClassName:@"Preguntas"];
@@ -117,10 +117,7 @@ char A;
 }
 
 - (IBAction)BtnNext:(id)sender {
-    
-    NSLog(@"Preguntas correctas %d", preguntasCorrectas);
-    
-    if(posicion < datos.count){
+    if(posicion < 10){
         PFObject *testObject = [PFObject objectWithClassName:@"Preguntas"];
         
         testObject = datos[posicion];
@@ -133,6 +130,7 @@ char A;
         //self.Contador.text = testObject[@"posicion"];
         posicion++;
         contador++;
+        NSLog(@"Preguntas correctas %d posicion actual %d", preguntasCorrectas, posicion);
         self.Contador.text = [NSString stringWithFormat:@"%d", contador];
     }else{
         [self performSegueWithIdentifier:@"SeguePreguntaToIndex" sender:self];
